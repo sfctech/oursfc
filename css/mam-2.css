@@ -1,0 +1,165 @@
+﻿.mam-header {
+    background-color: #0288d1;
+    color: #fff;
+}
+
+.close {
+    font-size: 30px;
+    color: #FFF !important;
+    opacity: .6; 
+}
+
+.close:hover {
+    opacity: 1; 
+}
+
+.tablesorter-default .header,.tablesorter-default .tablesorter-header {
+    background-image: url(data:image/gif;base64,R0lGODlhFQAJAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAkAAAIXjI+AywnaYnhUMoqt3gZXPmVg94yJVQAAOw==);
+    background-position: center right;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    white-space: normal;
+    padding: 4px 20px 4px 4px
+}
+
+.tablesorter-default thead .headerSortUp,.tablesorter-default thead .tablesorter-headerAsc,.tablesorter-default thead .tablesorter-headerSortUp {
+    background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjI8Bya2wnINUMopZAQA7);
+    border-bottom: #000 2px solid
+}
+
+.tablesorter-default thead .headerSortDown,.tablesorter-default thead .tablesorter-headerDesc,.tablesorter-default thead .tablesorter-headerSortDown {
+    background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjB+gC+jP2ptn0WskLQA7);
+    border-bottom: #000 2px solid
+}
+
+.tablesorter-default thead .sorter-false {
+    background-image: none !important;
+}
+
+.tablesorter {
+    font-size: 15px;
+}
+
+.tablesorter thead {
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.tablesorter tr {
+    line-height: 24px;
+}
+
+table.hoverable tbody tr {
+    -webkit-transition: background-color 0.25s ease;
+    -moz-transition: background-color 0.25s ease;
+    -o-transition: background-color 0.25s ease;
+    -ms-transition: background-color 0.25s ease;
+    transition: background-color 0.25s ease;
+}
+
+table.hoverable tbody tr:hover {
+    background-color: #b3d4fc !important;
+}
+
+table.hoverable tbody tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+#amModal h3 {
+    padding: 10px 20px;
+}
+
+#amModal .modal-body {
+    padding: 10px;
+    overflow-x: auto;
+}
+
+.cb-cell {
+    text-align: center;
+}
+
+.bg1 {
+    width: 80px;
+}
+
+.bg2 {
+    width: 100px;
+}
+
+#amModal .modal-footer > .btn {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.editAss {  
+    margin: 20px auto !important; 
+    text-align: Left; 
+    width: 50%; 
+    border: solid 1px #b3b3b3; 
+    border-radius: 2%; 
+    display: none 
+}
+
+.editAss input[type=radio] {
+    margin-left: 15px;
+}
+
+.editAss > div > label {
+    margin-left: 15px;
+}
+
+.starMark {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 30px;
+    display: none;
+}
+
+.input-field input[type=checkbox] {
+    margin-left: 25px;
+}
+
+.ltRow [type="checkbox"]:not(:checked) + label, .ltRow [type="checkbox"]:checked + label {
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+.editAss .inputGroup {
+    width: 40%;
+}
+
+.editAss .inputGroup input {
+    width: 100%;
+}
+
+.editAss .inputGroup .bar {
+    width: 100%;
+}
+
+/* ===================================
+    Media Query
+   ===================================*/
+@media (max-width: 992px) and (min-width: 769px) {
+    .editAss {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) { 
+    .editAss {
+        width: 90%;
+    }
+}
+
+@media (max-width: 550px) {
+    .editAss {
+        width: 90%;
+    }
+
+    .editAss .inputGroup {
+        width: 80%;
+    }
+
+    .editAss .inputGroup .bar {
+        width: 100%;
+    }
+}
