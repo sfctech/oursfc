@@ -7,7 +7,7 @@ The SFC official website publishes to all members.
 Make sure you have [Node.js](http://nodejs.org/) installed.
 
 ```sh
-git clone https://github.com/sfctech/oursfc # or clone your own fork
+git clone https://git.heroku.com/oursfc.git # or clone your own fork
 cd oursfc
 npm install
 npm start
