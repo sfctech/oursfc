@@ -1,0 +1,74 @@
+﻿<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>SFC Admin Emergency Contact</title>
+    <meta name="description" content="SFC Admin Emergency Contact">
+    <meta name="author" content="S.Ray">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript,JSON">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="icon" href="./favicon.ico">-->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/css/mam-2.css">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+
+<body style="text-align:center">
+
+    <div id="app"></div>
+
+    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/datejs/1.0/date.min.js"></script>
+    <script type='text/javascript' src="/js/jquery.tablesorter.min.js"></script>
+
+    <script type='text/javascript' src="/js/sfc.js"></script>
+
+    <script>
+	$(document).ready(function(){
+		let surl = 'https://api.mlab.com/api/1/databases/sfcdb/collections/emergencycontact?apiKey=m1QZo1IgF6SGC5zAgYCcseYPWf5xIsRS';
+		let oData = null;
+		sfc.myAjax(surl, oData, 'GET').then( (data) => {
+		    console.log(data);
+		    let sh = "";
+
+		    sh += '<table id="tbContact" class="tbContact hoverable" style="width: 99%; margin: 5px auto">';
+		    sh += '  <thead>';
+		    sh += '    <tr>';
+		    sh += '      <th>Name</th>';
+		    sh += '      <th>Phone</th>';
+		    sh += '      <th>Location</th>';
+		    sh += '    </tr>';
+		    sh += '  </thead>';
+		    sh += '  <tbody>';
+
+		    for (var i = 0, l = data.length; i < l; i++) {
+                sh += '<tr>';
+		        sh += '  <td >' + data[i].name + '</td>';
+		        sh += '  <td class="cb-cell">' + sfc.formatPhoneNumber(data[i].phone) + '</td>';
+		        sh += '  <td class="cb-cell">' + data[i].location + '</td>';
+		        sh += '</tr>';
+		    }
+
+		    sh += '</tbody></table>';
+
+		    $('div#app').html(sh);
+
+		    $('#tbContact').tablesorter();
+		});
+
+	});
+
+    </script>
+
+    <br/><br/>
+    <script src="//markets.financialcontent.com/stocks?Module=tickerbar&Output=JS"></script>
+</body>
+</html>

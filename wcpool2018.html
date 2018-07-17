@@ -1,0 +1,1469 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0066)https://www.myofficepool.ca/soccer/worldcup/pick.php?p=807&entry=1 -->
+<html xmlns="https://www.w3.org/1999/xhtml" style="height: 100%;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:description" content="">
+
+    <script src="./js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <!-- Optional theme -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet" integrity="sha256-obxCG8hWR3FEKvV19p/G6KgEYm1v/u1FnRTS7Bc4Ii8= sha512-8Xs5FuWgtHH1JXye8aQcxVEtLqozJQAu8nhPymuRqeEslT6nJ2OgEYeS3cKiXasOVxYPN80DDoOTKWgOafU1LQ==" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="./js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" type="text/css" href="./css/mam-2.css">
+    
+    <script type="text/javascript" charset="UTF-8" src="./js/main.js"></script>
+
+    <title>World Cup Russia 2018: Pick Entry Form</title>
+
+    <style>
+        #entrySection p {
+            margin: 0;
+        }
+
+        .pick-cell {
+            display: inline-flex;
+            width: 32%;
+        }
+        
+        #tbData th, #tbData tr {
+            text-align: center;
+        }
+        
+        .chart > div {
+            background-color: orange;
+            color: #fff;
+            text-align: right;
+            padding-right: 10px;
+            line-height: 25px;
+            border-radius: 3px;
+            margin-bottom: 3px;
+        }
+        
+        .back-to-top-button.is-visible {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .back-to-top-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 700;
+            background: #fff;
+            width: 4rem;
+            height: 4rem;
+            position: fixed;
+            right: 2rem;
+            bottom: 2rem;
+            border-radius: 50%;
+            user-select: none;
+            box-shadow: 0 0.4rem 0.8rem -0.1rem rgba(0,32,128,.15);
+            transition: all .2s ease-out;
+            /*visibility: hidden;
+            opacity: 0;*/
+            display: none;
+            z-index: 3;
+            border: 1px solid rgba(0,32,128,.1);
+            outline: 0;
+            color: inherit;
+        }
+        .back-to-top-button:hover {
+            color: #1995dc;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body style="position: relative; min-height: 100%; top: 0px;">
+	<div class="container-fluid">
+	  
+    <!-- Title and Navigation Section -->
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <p class="text-center text-muted">
+            <!-- Responsive -->         
+            </p>
+            <h2>World Cup Russia 2018 (世界杯俄罗斯2018年)</h2>
+            <h5>World Cup 2018 Pool Created By SFC Admins (世界杯2018年彩池由SFC管理员创建)</h5>
+            <nav class="navbar navbar-default">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#poolNavbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="poolNavbar">
+                <ul class="nav navbar-nav">
+                    <li class=""><a href="#ruleSection">Rules(规则)</a></li>
+                    <li class=""><a href="#entrySection">Your Pick(您的选择)</a></li>
+                    <li class=""><a href="#resultsSection">Results(结果)</a></li>
+                </ul>
+            </div>
+            </nav>
+            <div class="well" style="margin-bottom: 0"><p class="lead text-center">Game Start (游戏开始)<br>
+            <strong><span class="timer element">3 days, 12:49:18</span></strong>
+            <script src="./js/countid.min.js"></script>
+            <script>
+                $('.timer').countid({
+	            clock: true,
+	            dateTime: '06/14/2018 11:00:00',
+                dateTplRemaining: "%D days, %H:%M:%S",
+            })
+            </script>
+            </p>
+            </div>
+        </div>
+      </div>
+
+    <!-- Modal HTML -->
+    <div id="pickFormInvalidModal" class="modal fade">
+    	<div class="modal-dialog modal-confirm">
+    		<div class="modal-content">
+    			<div class="modal-header">
+    				<span style="font-size: 60px;" class="glyphicon glyphicon-alert text-danger"></span>
+    				<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span>×</span></button>
+    			</div>
+    			<div class="modal-body text-center">
+    				<h4>Incomplete Pick Form</h4>
+    				<p>Your pick form is incomplete. Click "Update Picks" to close this message, then complete
+                    the form and resubmit, or click "Submit Incomplete" to save your current
+                    selections.</p>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Update Picks</button> &nbsp;
+                    <button type="button" class="btn btn-primary submit-pick-form">Submit Incomplete</button>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+<!--     
+    <form data-toggle="validator" id="pickForm" class="form-inline" action="" novalidate="true">
+
+    <hr><h4>1. Complete Your Bracket (完成你的选择, 从分组开始)</h4>
+
+<div class="form-group">
+    <button class="btn btn-primary btn-xs" id="randomTeams" type="button" value="1" onclick="callRandomTeams();">Randomize Teams (随机精选)</button>
+</div>
+-->
+
+<script type="text/javascript">
+
+function callRandomTeams(){
+    var allMatches = ["GroupA_1", "GroupA_2", "GroupB_1", "GroupB_2", "GroupC_1", "GroupC_2", "GroupD_1", "GroupD_2",
+        "GroupE_1", "GroupE_2", "GroupF_1", "GroupF_2", "GroupG_1", "GroupG_2", "GroupH_1", "GroupH_2", 
+        "R16_49", "R16_50", "R16_51", "R16_52", "R16_53", "R16_54", "R16_55", "R16_56", 
+        "QF_57", "QF_58", "QF_59", "QF_60", "SF_61", "SF_62", "Final"];
+    for (i = 0; i <= 30; i++) {
+    
+        if(i == 16) {
+            adjustDropDowns( "GroupA_1", "GroupB_2", "R16_49");
+            adjustDropDowns( "GroupC_1", "GroupD_2", "R16_50");
+            adjustDropDowns( "GroupB_1", "GroupA_2", "R16_51");
+            adjustDropDowns( "GroupD_1", "GroupC_2", "R16_52");
+            adjustDropDowns( "GroupE_1", "GroupF_2", "R16_53");
+            adjustDropDowns( "GroupG_1", "GroupH_2", "R16_54");
+            adjustDropDowns( "GroupF_1", "GroupE_2", "R16_55");
+            adjustDropDowns( "GroupH_1", "GroupG_2", "R16_56");
+        } else if(i == 24) {
+            adjustDropDowns( "R16_49", "R16_50", "QF_57");
+            adjustDropDowns( "R16_53", "R16_54", "QF_58");
+            adjustDropDowns( "R16_51", "R16_52", "QF_59");
+            adjustDropDowns( "R16_55", "R16_56", "QF_60");
+        } else if(i == 28) {
+            adjustDropDowns( "QF_57", "QF_58", "SF_61");
+            adjustDropDowns( "QF_59", "QF_60", "SF_62");
+        } else if(i == 30) {
+            adjustDropDowns( "SF_61", "SF_62", "Final");
+        } else {
+            // continue
+        }
+            
+        var select = document.getElementById(allMatches[i]);
+        var items = select.getElementsByTagName("option");
+        if(i < 16) {
+            // need to prevent same team getting picked more than once in group stage
+            if(allMatches[i].substr(7,1) == "1") {
+                var team = document.getElementById(allMatches[i].substr(0,7)+"2").value;
+            } else {
+                var team = document.getElementById(allMatches[i].substr(0,7)+"1").value;
+            }
+            
+            if(team) {
+                do {
+                    var index = Math.floor(Math.random() * (4 - 1 + 1)) + 1; // random between 1 and 4, excluding option 0 (empty)
+                    select.selectedIndex = index;
+                }
+                while (document.getElementById(allMatches[i]).value == team);
+            } else {
+                var index = Math.floor(Math.random() * (4 - 1 + 1)) + 1; // random between 1 and 4, excluding option 0 (empty)
+                select.selectedIndex = index;
+            }
+        } else {
+            var index = Math.floor(Math.random() * items.length);
+            select.selectedIndex = index;
+            if(i == 30) {
+                var select = document.getElementById("Third");
+                var items = select.getElementsByTagName("option");
+                var index = Math.floor(Math.random() * items.length);
+                select.selectedIndex = index;
+            }
+        }
+	}
+    $('#pickForm').validator('validate');
+}
+
+function adjustDropDowns( dd1, dd2, dd3 )
+{
+    $(function () {
+        // get current selected value (if available)
+        var e = document.getElementById(dd3).value;
+        
+        $("#" + dd3).empty();
+
+        var option1 = $("#" + dd1 + " option:selected").clone();
+        var option2 = $("#" + dd2 + " option:selected").clone();
+        
+        $("#" + dd3).append(option1);
+        $("#" + dd3).append(option2);
+        
+        // select original selected value (if available)
+        if(e) { document.getElementById(dd3).value = e; }
+
+        // third place game drop-down
+        if(dd3 == "Final") {
+            // get current selected value (if available)
+            var e = document.getElementById("Third").value;
+            
+            $("#Third").empty();
+            
+            var option1 = $("#" + dd1 + " option:not(:selected)").clone();
+            var option2 = $("#" + dd2 + " option:not(:selected)").clone();
+
+            $("#Third").append(option1);
+            $("#Third").append(option2);
+            
+            // remove blank options
+            $("#Third").find("option[value='']").remove();
+            
+            // select original selected value (if available)
+            if(e) { document.getElementById("Third").value = e; }
+        }
+    });
+        
+    // run this function again for each later round in bracket
+    
+    if(dd3 === "R16_49") {
+        adjustDropDowns( dd3, "R16_50", "QF_57");
+    } else if(dd3 === "R16_50") {
+        adjustDropDowns( dd3, "R16_49", "QF_57");
+    } else if(dd3 === "R16_53") {
+        adjustDropDowns( dd3, "R16_54", "QF_58");
+    } else if(dd3 === "R16_54") {
+        adjustDropDowns( dd3, "R16_53", "QF_58");
+    } else if(dd3 === "R16_51") {
+        adjustDropDowns( dd3, "R16_52", "QF_59");
+    } else if(dd3 === "R16_52") {
+        adjustDropDowns( dd3, "R16_51", "QF_59");
+    } else if(dd3 === "R16_55") {
+        adjustDropDowns( dd3, "R16_56", "QF_60");
+    } else if(dd3 === "R16_56") {
+        adjustDropDowns( dd3, "R16_55", "QF_60");
+    } else if(dd3 === "QF_57") {
+        adjustDropDowns( dd3, "QF_58", "SF_61");
+    } else if(dd3 === "QF_58") {
+        adjustDropDowns( dd3, "QF_57", "SF_61");
+    } else if(dd3 === "QF_59") {
+        adjustDropDowns( dd3, "QF_60", "SF_62");
+    } else if(dd3 === "QF_60") {
+        adjustDropDowns( dd3, "QF_59", "SF_62");
+    } else if(dd3 === "SF_61") {
+        adjustDropDowns( dd3, "SF_62", "Final");
+    } else if(dd3 === "SF_62") {
+        adjustDropDowns( dd3, "SF_61", "Final");
+    } else {
+        // do nothing
+    }
+
+    // run this function if changed a group selection to ensure no duplicates
+    if(dd1.indexOf("Group") == 0) {
+        adjustSameRoundDropDowns( dd1 );
+    }
+        
+}
+        
+function adjustSameRoundDropDowns( dd1 )
+{
+    // get group letter(s)
+    if(dd1.indexOf("_1") > 0 || dd1.indexOf("_2") > 0) {
+        var groups = [dd1.substr(5,1)];
+    } else {
+        var groups = [dd1.substr(5,1), dd1.substr(6,1), dd1.substr(7,1)];
+    }
+        
+    // get value of dd1
+    var e = document.getElementById(dd1);
+    var team = e.options[e.selectedIndex].value;
+    
+    if(team == "") { return; }
+    
+    var matches = ["GroupA_1", "GroupA_2", "GroupB_1", "GroupB_2", "GroupC_1", "GroupC_2", "GroupD_1", "GroupD_2", "GroupE_1", "GroupE_2", "GroupF_1", "GroupF_2", "GroupG_1", "GroupG_2", "GroupH_1", "GroupH_2"];
+    var relation1 = ["B", "B", "A", "A", "D", "D", "C", "C", "F", "F", "E", "E", "H", "H", "G", "G"];
+    var relation2 = ["R16_49", "R16_51", "R16_51", "R16_49", "R16_50", "R16_52", "R16_52", "R16_50", "R16_53", "R16_55", "R16_55", "R16_53", "R16_54", "R16_56", "R16_56", "R16_54"];
+
+    for (g = 0; g < groups.length; g++) {
+        
+        for (i = 0; i < 16; i++) {
+            
+            if(matches[i] != dd1 && matches[i].indexOf(groups[g]) > 0) {
+                
+                // get value of matches[i]
+                var e = document.getElementById(matches[i]);
+                
+                // if value of matches[i] == team from dd1 then change selectedIndex to blank
+                if(e.options[e.selectedIndex].value == team) {
+        
+                    document.getElementById(matches[i]).selectedIndex = 0;
+                    
+                    // adjust subsequent drop-downs for this change
+                    if(dd1.indexOf("_1") > 0) {
+                        adjustDropDowns( "Group"+groups+"_2", "Group"+relation1[i]+"_1", relation2[i]);
+                    } else if(dd1.indexOf("_2") > 0) {
+                        adjustDropDowns( "Group"+groups+"_1", "Group"+relation1[i]+"_2", relation2[i]);
+                    } else {
+                        // 
+                    }
+                }
+            }
+        }
+    }
+        
+}
+
+</script>
+
+<!--
+<div class="table-responsive">
+    <table width="100%">
+    <tbody><tr>
+    <td width="14%" style="text-align: center;"><h5>Group Stage</h5></td>
+    <td width="14%" style="text-align: center;"><h5>Round of 16</h5></td>
+    <td width="18%" style="text-align: center;"><h5>Quarter-Finals</h5></td>
+    <td width="18%" style="text-align: center;"><h5>Semi-Finals</h5></td>
+    <td width="18%" style="text-align: center;"><h5>Final</h5></td>
+    <td width="18%" style="text-align: center;"><h5>World Cup Champion</h5></td>
+    </tr>
+    <tr>
+    <td style="text-align: right;">Winner Group A:&nbsp;</td>
+    <td style="border-bottom: 2px #000000 solid;">&nbsp;<select style="min-width: 90%;" id="GroupA_1" name="Pick[GroupA_1]" required="" onchange="adjustDropDowns(&#39;GroupA_1&#39;, &#39;GroupB_2&#39;, &#39;R16_49&#39;)">
+		  <option value="">
+                    </option><option value="RUS">Russia(俄罗斯)
+                    </option><option value="KSA">Saudi Arabia(沙特)
+                    </option><option value="EGY">Egypt(埃及)
+                    </option><option value="URU">Uruguay(乌拉圭)
+		 </option></select></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    </tr>
+    <tr>
+    <td>&nbsp;</td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td style="border-bottom: 2px #000000 solid;">&nbsp;<select style="min-width: 90%;" id="R16_49" name="Pick[R16_49]" required="" onchange="adjustDropDowns(&#39;R16_49&#39;, &#39;R16_50&#39;, &#39;QF_57&#39;)">
+		  <option value="">
+            </option><option value="">
+            </option><option value="">
+		 </option></select></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    </tr>
+    <tr>
+    <td style="text-align: right;">Runner-up Group B:&nbsp;</td>
+    <td style="border-bottom: 2px #000000 solid; border-right: 2px #000000 solid;">&nbsp;<select style="min-width: 90%;" id="GroupB_2" name="Pick[GroupB_2]" required="" onchange="adjustDropDowns(&#39;GroupB_2&#39;, &#39;GroupA_1&#39;, &#39;R16_49&#39;)">
+		  <option value="">
+                    </option><option value="POR">Portugal(葡萄牙)
+                    </option><option value="ESP">Spain(西班牙)
+                    </option><option value="MOR">Morocco(摩洛哥)
+                    </option><option value="IRN">IR Iran(伊朗)
+		 </option></select></td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    </tr>
+    <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td style="border-bottom: 2px #000000 solid;">&nbsp;<select style="min-width: 90%;" id="QF_57" name="Pick[QF_57]" required="" onchange="adjustDropDowns(&#39;QF_57&#39;, &#39;QF_58&#39;, &#39;SF_61&#39;)">
+		  <option value="">
+            </option><option value="">
+            </option><option value="">
+		 </option></select></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    </tr>
+    <tr>
+    <td style="text-align: right;">Winner Group C:&nbsp;</td>
+    <td style="border-bottom: 2px #000000 solid;">&nbsp;<select style="min-width: 90%;" id="GroupC_1" name="Pick[GroupC_1]" required="" onchange="adjustDropDowns(&#39;GroupC_1&#39;, &#39;GroupD_2&#39;, &#39;R16_50&#39;)">
+		  <option value="">
+                    </option><option value="FRA">France(法国)
+                    </option><option value="AUS">Australia(澳大利亚)
+                    </option><option value="PRU">Peru(秘鲁)
+                    </option><option value="DEN">Denmark(丹麦)
+		 </option></select></td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    </tr>
+    <tr>
+    <td>&nbsp;</td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td style="border-bottom: 2px #000000 solid; border-right: 2px #000000 solid;">&nbsp;<select style="min-width: 90%;" id="R16_50" name="Pick[R16_50]" required="" onchange="adjustDropDowns(&#39;R16_50&#39;, &#39;R16_49&#39;, &#39;QF_57&#39;)">
+		  <option value="">
+            </option><option value="">
+            </option><option value="">
+		 </option></select></td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    </tr>
+    <tr>
+    <td style="text-align: right;">Runner-up Group D:&nbsp;</td>
+    <td style="border-bottom: 2px #000000 solid; border-right: 2px #000000 solid;">&nbsp;<select style="min-width: 90%;" id="GroupD_2" name="Pick[GroupD_2]" required="" onchange="adjustDropDowns(&#39;GroupD_2&#39;, &#39;GroupC_1&#39;, &#39;R16_50&#39;)">
+		  <option value="">
+                    </option><option value="ARG">Argentina(阿根廷)
+                    </option><option value="ICE">Iceland(冰岛)
+                    </option><option value="CRO">Croatia(克罗地亚)
+                    </option><option value="NGA">Nigeria(尼日利亚)
+		 </option></select></td>
+    <td>&nbsp;</td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    </tr>
+    <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td style="border-bottom: 2px #000000 solid;">&nbsp;<select style="min-width: 90%;" id="SF_61" name="Pick[SF_61]" required="" onchange="adjustDropDowns(&#39;SF_61&#39;, &#39;SF_62&#39;, &#39;Final&#39;)">
+		  <option value="">
+            </option><option value="">
+            </option><option value="">
+		 </option></select></td>
+    <td>&nbsp;</td>
+    </tr>
+    <tr>
+    <td style="text-align: right;">Winner Group E:&nbsp;</td>
+    <td style="border-bottom: 2px #000000 solid;">&nbsp;<select style="min-width: 90%;" id="GroupE_1" name="Pick[GroupE_1]" required="" onchange="adjustDropDowns(&#39;GroupE_1&#39;, &#39;GroupF_2&#39;, &#39;R16_53&#39;)">
+		  <option value="">
+                    </option><option value="BRA">Brazil(巴西)
+                    </option><option value="SUI">Switzerland(瑞士)
+                    </option><option value="CRC">Costa Rica(哥斯达黎加)
+                    </option><option value="SRB">Serbia(塞尔维亚)
+		 </option></select></td>
+    <td>&nbsp;</td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td>&nbsp;</td>
+    </tr>
+    <tr>
+    <td>&nbsp;</td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td style="border-bottom: 2px #000000 solid;">&nbsp;<select style="min-width: 90%;" id="R16_53" name="Pick[R16_53]" required="" onchange="adjustDropDowns(&#39;R16_53&#39;, &#39;R16_54&#39;, &#39;QF_58&#39;)">
+		  <option value="">
+            </option><option value="">
+            </option><option value="">
+		 </option></select></td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td>&nbsp;</td>
+    </tr>
+    <tr>
+    <td style="text-align: right;">Runner-up Group F:&nbsp;</td>
+    <td style="border-bottom: 2px #000000 solid; border-right: 2px #000000 solid;">&nbsp;<select style="min-width: 90%;" id="GroupF_2" name="Pick[GroupF_2]" required="" onchange="adjustDropDowns(&#39;GroupF_2&#39;, &#39;GroupE_1&#39;, &#39;R16_53&#39;)">
+		  <option value="">
+                    </option><option value="GER">Germany(德国)
+                    </option><option value="MEX">Mexico(墨西哥)
+                    </option><option value="SWE">Sweden(瑞典)
+                    </option><option value="KOR">Korea Republic(韩国)
+		 </option></select></td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td>&nbsp;</td>
+    </tr>
+    <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td style="border-bottom: 2px #000000 solid; border-right: 2px #000000 solid;">&nbsp;<select style="min-width: 90%;" id="QF_58" name="Pick[QF_58]" required="" onchange="adjustDropDowns(&#39;QF_58&#39;, &#39;QF_57&#39;, &#39;SF_61&#39;)">
+		  <option value="">
+            </option><option value="">
+            </option><option value="">
+		 </option></select></td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td>&nbsp;</td>
+    </tr>
+    <tr>
+    <td style="text-align: right;">Winner Group G:&nbsp;</td>
+    <td style="border-bottom: 2px #000000 solid;">&nbsp;<select style="min-width: 90%;" id="GroupG_1" name="Pick[GroupG_1]" required="" onchange="adjustDropDowns(&#39;GroupG_1&#39;, &#39;GroupH_2&#39;, &#39;R16_54&#39;)">
+		  <option value="">
+                    </option><option value="BEL">Belgium(比利时)
+                    </option><option value="PAN">Panama(巴拿马)
+                    </option><option value="TUN">Tunisia(突尼斯)
+                    </option><option value="ENG">England(英格兰)
+		 </option></select></td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td>&nbsp;</td>
+    </tr>
+    <tr>
+    <td>&nbsp;</td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td style="border-bottom: 2px #000000 solid; border-right: 2px #000000 solid;">&nbsp;<select style="min-width: 90%;" id="R16_54" name="Pick[R16_54]" required="" onchange="adjustDropDowns(&#39;R16_54&#39;, &#39;R16_53&#39;, &#39;QF_58&#39;)">
+		  <option value="">
+            </option><option value="">
+            </option><option value="">
+		 </option></select></td>
+    <td>&nbsp;</td>
+    <td rowspan="5" style="border-right: 2px #000000 solid;"> <div style="text-align: center;"><img src="./js/worldcup2018.jpg" width="125" height="125" alt="World Cup 2018"></div> </td>
+    <td>&nbsp;</td>
+    </tr>
+    <tr>
+    <td style="text-align: right;">Runner-up Group H:&nbsp;</td>
+    <td style="border-bottom: 2px #000000 solid; border-right: 2px #000000 solid;">&nbsp;<select style="min-width: 90%;" id="GroupH_2" name="Pick[GroupH_2]" required="" onchange="adjustDropDowns(&#39;GroupH_2&#39;, &#39;GroupG_1&#39;, &#39;R16_54&#39;)">
+		  <option value="">
+                    </option><option value="POL">Poland(波兰)
+                    </option><option value="SEN">Senegal(塞内加尔)
+                    </option><option value="COL">Colombia(哥伦比亚)
+                    </option><option value="JPN">Japan(日本)
+		 </option></select></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    </tr>
+    <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td style="border-bottom: 2px #000000 solid;">&nbsp;<select style="min-width: 90%;" id="Final" name="Pick[Final]" required="">
+		  <option value="">
+            </option><option value="">
+            </option><option value="">
+		 </option></select></td>
+    </tr>
+    <tr>
+    <td style="text-align: right;">Winner Group B:&nbsp;</td>
+    <td style="border-bottom: 2px #000000 solid;">&nbsp;<select style="min-width: 90%;" id="GroupB_1" name="Pick[GroupB_1]" required="" onchange="adjustDropDowns(&#39;GroupB_1&#39;, &#39;GroupA_2&#39;, &#39;R16_51&#39;)">
+		  <option value="">
+                    </option><option value="POR">Portugal(葡萄牙)
+                    </option><option value="ESP">Spain(西班牙)
+                    </option><option value="MOR">Morocco(摩洛哥)
+                    </option><option value="IRN">IR Iran(伊朗)
+		 </option></select></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    </tr>
+    <tr>
+    <td>&nbsp;</td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td style="border-bottom: 2px #000000 solid;">&nbsp;<select style="min-width: 90%;" id="R16_51" name="Pick[R16_51]" required="" onchange="adjustDropDowns(&#39;R16_51&#39;, &#39;R16_52&#39;, &#39;QF_59&#39;)">
+		  <option value="">
+            </option><option value="">
+            </option><option value="">
+		 </option></select></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    </tr>
+    <tr>
+    <td style="text-align: right;">Runner-up Group A:&nbsp;</td>
+    <td style="border-bottom: 2px #000000 solid; border-right: 2px #000000 solid;">&nbsp;<select style="min-width: 90%;" id="GroupA_2" name="Pick[GroupA_2]" required="" onchange="adjustDropDowns(&#39;GroupA_2&#39;, &#39;GroupB_1&#39;, &#39;R16_51&#39;)">
+		  <option value="">
+                    </option><option value="RUS">Russia(俄罗斯)
+                    </option><option value="KSA">Saudi Arabia(沙特)
+                    </option><option value="EGY">Egypt(埃及)
+                    </option><option value="URU">Uruguay(乌拉圭)
+		 </option></select></td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td>&nbsp;</td>
+    </tr>
+    <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td style="border-bottom: 2px #000000 solid;">&nbsp;<select style="min-width: 90%;" id="QF_59" name="Pick[QF_59]" required="" onchange="adjustDropDowns(&#39;QF_59&#39;, &#39;QF_60&#39;, &#39;SF_62&#39;)">
+		  <option value="">
+            </option><option value="">
+            </option><option value="">
+		 </option></select></td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td>&nbsp;</td>
+    </tr>
+    <tr>
+    <td style="text-align: right;">Winner Group D:&nbsp;</td>
+    <td style="border-bottom: 2px #000000 solid;">&nbsp;<select style="min-width: 90%;" id="GroupD_1" name="Pick[GroupD_1]" required="" onchange="adjustDropDowns(&#39;GroupD_1&#39;, &#39;GroupC_2&#39;, &#39;R16_52&#39;)">
+		  <option value="">
+                    </option><option value="ARG">Argentina(阿根廷)
+                    </option><option value="ICE">Iceland(冰岛)
+                    </option><option value="CRO">Croatia(克罗地亚)
+                    </option><option value="NGA">Nigeria(尼日利亚)
+		 </option></select></td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td>&nbsp;</td>
+    </tr>
+    <tr>
+    <td>&nbsp;</td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td style="border-bottom: 2px #000000 solid; border-right: 2px #000000 solid;">&nbsp;<select style="min-width: 90%;" id="R16_52" name="Pick[R16_52]" required="" onchange="adjustDropDowns(&#39;R16_52&#39;, &#39;R16_51&#39;, &#39;QF_59&#39;)">
+		  <option value="">
+            </option><option value="">
+            </option><option value="">
+		 </option></select></td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td>&nbsp;</td>
+    </tr>
+    <tr>
+    <td style="text-align: right;">Runner-up Group C:&nbsp;</td>
+    <td style="border-bottom: 2px #000000 solid; border-right: 2px #000000 solid;">&nbsp;<select style="min-width: 90%;" id="GroupC_2" name="Pick[GroupC_2]" required="" onchange="adjustDropDowns(&#39;GroupC_2&#39;, &#39;GroupD_1&#39;, &#39;R16_52&#39;)">
+		  <option value="">
+                    </option><option value="FRA">France(法国)
+                    </option><option value="AUS">Australia(澳大利亚)
+                    </option><option value="PRU">Peru(秘鲁)
+                    </option><option value="DEN">Denmark(丹麦)
+		 </option></select></td>
+    <td>&nbsp;</td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td>&nbsp;</td>
+    </tr>
+    <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td style="border-bottom: 2px #000000 solid; border-right: 2px #000000 solid;">&nbsp;<select style="min-width: 90%;" id="SF_62" name="Pick[SF_62]" required="" onchange="adjustDropDowns(&#39;SF_62&#39;, &#39;SF_61&#39;, &#39;Final&#39;)">
+		  <option value="">
+            </option><option value="">
+            </option><option value="">
+		 </option></select></td>
+    <td>&nbsp;</td>
+    </tr>
+    <tr>
+    <td style="text-align: right;">Winner Group F:&nbsp;</td>
+    <td style="border-bottom: 2px #000000 solid;">&nbsp;<select style="min-width: 90%;" id="GroupF_1" name="Pick[GroupF_1]" required="" onchange="adjustDropDowns(&#39;GroupF_1&#39;, &#39;GroupE_2&#39;, &#39;R16_55&#39;)">
+		  <option value="">
+                    </option><option value="GER">Germany(德国)
+                    </option><option value="MEX">Mexico(墨西哥)
+                    </option><option value="SWE">Sweden(瑞典)
+                    </option><option value="KOR">Korea Republic(韩国)
+		 </option></select></td>
+    <td>&nbsp;</td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    </tr>
+    <tr>
+    <td>&nbsp;</td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td style="border-bottom: 2px #000000 solid;">&nbsp;<select style="min-width: 90%;" id="R16_55" name="Pick[R16_55]" required="" onchange="adjustDropDowns(&#39;R16_55&#39;, &#39;R16_56&#39;, &#39;QF_60&#39;)">
+		  <option value="">
+            </option><option value="">
+            </option><option value="">
+		 </option></select></td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    </tr>
+    <tr>
+    <td style="text-align: right;">Runner-up Group E:&nbsp;</td>
+    <td style="border-bottom: 2px #000000 solid; border-right: 2px #000000 solid;">&nbsp;<select style="min-width: 90%;" id="GroupE_2" name="Pick[GroupE_2]" required="" onchange="adjustDropDowns(&#39;GroupE_2&#39;, &#39;GroupF_1&#39;, &#39;R16_55&#39;)">
+		  <option value="">
+                    </option><option value="BRA">Brazil(巴西)
+                    </option><option value="SUI">Switzerland(瑞士)
+                    </option><option value="CRC">Costa Rica(哥斯达黎加)
+                    </option><option value="SRB">Serbia(塞尔维亚)
+		 </option></select></td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td style="border-left: 2px #000000 solid; text-align: center;"><h5 style="margin: 0; padding: 0;">3rd Place</h5></td>
+    </tr>
+    <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td style="border-bottom: 2px #000000 solid; border-right: 2px #000000 solid;">&nbsp;<select style="min-width: 90%;" id="QF_60" name="Pick[QF_60]" required="" onchange="adjustDropDowns(&#39;QF_60&#39;, &#39;QF_59&#39;, &#39;SF_62&#39;)">
+		  <option value="">
+            </option><option value="">
+            </option><option value="">
+		 </option></select></td>
+    <td>&nbsp;</td>
+    <td style="border-left: 2px #000000 solid; border-bottom: 2px #000000 solid;">&nbsp;<select style="min-width: 90%;" id="Third" name="Pick[Third]" required="">
+		  <option value="">
+            </option><option value="">
+            </option><option value="">
+		 </option></select></td>
+    </tr>
+    <tr>
+    <td style="text-align: right;">Winner Group H:&nbsp;</td>
+    <td style="border-bottom: 2px #000000 solid;">&nbsp;<select style="min-width: 90%;" id="GroupH_1" name="Pick[GroupH_1]" required="" onchange="adjustDropDowns(&#39;GroupH_1&#39;, &#39;GroupG_2&#39;, &#39;R16_56&#39;)">
+		  <option value="">
+                    </option><option value="POL">Poland(波兰)
+                    </option><option value="SEN">Senegal(塞内加尔)
+                    </option><option value="COL">Colombia(哥伦比亚)
+                    </option><option value="JPN">Japan(日本)
+		 </option></select></td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    </tr>
+    <tr>
+    <td>&nbsp;</td>
+    <td style="border-right: 2px #000000 solid;">&nbsp;</td>
+    <td style="border-bottom: 2px #000000 solid; border-right: 2px #000000 solid;">&nbsp;<select style="min-width: 90%;" id="R16_56" name="Pick[R16_56]" required="" onchange="adjustDropDowns(&#39;R16_56&#39;, &#39;R16_55&#39;, &#39;QF_60&#39;)">
+		  <option value="">
+            </option><option value="">
+            </option><option value="">
+		 </option></select></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    </tr>
+    <tr>
+    <td style="text-align: right;">Runner-up Group G:&nbsp;</td>
+    <td style="border-bottom: 2px #000000 solid; border-right: 2px #000000 solid;">&nbsp;<select style="min-width: 90%;" id="GroupG_2" name="Pick[GroupG_2]" required="" onchange="adjustDropDowns(&#39;GroupG_2&#39;, &#39;GroupH_1&#39;, &#39;R16_56&#39;)">
+		  <option value="">
+                    </option><option value="BEL">Belgium(比利时)
+                    </option><option value="PAN">Panama(巴拿马)
+                    </option><option value="TUN">Tunisia(突尼斯)
+                    </option><option value="ENG">England(英格兰)
+		 </option></select></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    </tr>
+    </tbody></table>
+</div>
+
+
+    <hr><h4>2. Submit Your Picks (提交您的精选)</h4>
+
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('[data-toggle="popover"]').popover();
+        });
+        </script>
+        
+        <div class="row text-center">
+            <label for="alias">Your Name as First+Last+index e.g. Simon Leung1, Simon Leung2...etc (输入名称)<h5 class="glyphicon glyphicon-question-sign" data-container="body" data-toggle="popover" title="" data-content="Give this entry an alias name which will appear on the results page for all users instead of your default &quot;sfc-pool&quot;. This option cannot be changed after the pool starts. Only A-Z, a-z, 0-9, underscores and dashes, minimum 4 to maximum 24 characters allowed. Clear the text box to restore the default." data-original-title="Alias"></h5></label><br>
+            <div class="input-group" style="display: inline-block;">
+                <input id="alias" type="text" class="form-control" name="alias" value="" placeholder="your name here (别名)">
+            </div>
+        </div><br>
+        <div class="row text-center">
+            <div class="form-group">
+                <input type="hidden" name="submitButton" value="1">
+                <button class="btn btn-lg btn-primary btn-block" type="submit" value="1">Submit Picks (提交)</button>
+            </div>
+        </div>
+    </form>
+-->
+    <!-- Pie Chart Section -->
+        <hr>
+        <p><b>Statistic in all picks(在所有投注中的统计)</b>
+            <button id="btnPieChart" type="button" class="btn btn-primary">Close(关闭)</button>
+        </p>
+        <div id="pieChart" class="clearfix" style="width: 100%;">
+            <div id="pieChartFinal" style="float:left; min-width:320px; max-width:800px; text-align: center; font-size: 2em; font-weight: 600;">
+                <span>Champion</span>
+                <img src="/img/final-stat.jpg" style="width: 100%"/>
+            </div>
+            <div id="pieChartFinal" style="float:left; min-width:320px; max-width:800px; text-align: center; font-size: 2em; font-weight: 600;">
+                <span>Third</span>
+                <img src="/img/third-stat.jpg" style="width: 100%"/>
+            </div>
+        </div>
+    
+    <!-- Your Picks Section -->
+    <hr>
+    <p style="color: #1995dc; font-size: 18px"><b>Please pay your fee to one of the Admins or eTransfer to lialbert298@gmail.com</b>
+            <!--<button id="btnEntry" type="button" class="btn btn-primary">Expand(打开)</button>-->
+        </p>
+        <div id="entrySection">
+            <!--Please submit your picks first (请先提交您的选择)......-->
+            <a href="EntriesFullDetails.html" style="font-size: 1.5em; font-weight: 600; color: blueviolet;">🚩 Details of your entries ʘ‿ʘ</a>
+        </div>
+    
+    <!-- Rank Section -->
+        <hr>
+        <div><a href="https://www.google.ca/search?rlz=1C1CHZL_enUS747US747&ei=7NklW_WYIqGVjwTanKHYBQ&q=world+cup+2018+groups&oq=world+cup+groups+rank&gs_l=psy-ab.1.0.0i71k1l8.0.0.0.14260.0.0.0.0.0.0.0.0..0.0....0...1c..64.psy-ab..0.0.0....0.MNDqTsUqQJ0#sie=lg;/m/06qjc4;2;/m/030q7;st;fp;1" target="_blank">Groups Ranking (小组排名)</a></div>
+        <p style="width: 100%; text-align: center; font-weight: 600; color: #444; margin-bottom: 5px">Top 10 Entries(前十注)</p>
+        <div class="col s12 chart"></div>
+        <div id="resultsSection"></div>
+    
+    <!-- Rules Section -->
+    <hr>
+
+    <div id="ruleSection" style="padding: 5px 20px">
+      <h3>Rules Summary (规则摘要) <button id="btnRule" type="button" class="btn btn-primary">Expand(打开)</button></h3>
+      <div id="ruleContent" style="display: none">
+        <p>Fill in the bracket by picking all teams that qualify for the knockout round based on their group stage standings, and pick the winner of each knockout round game all the way to the World Cup Final.</p>
+        <p>You will earn points for selecting the correct team for each round of the bracket. Points are awarded according to the following tables:</p>
+        <div style="float: left;">
+            <h4>Knockout Round Qualifiers (Based on Group Standings)</h4>
+            <div class="table-responsive">
+                <table class="table table-bordered table-condensed table-hover">
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th>Group winner</th>
+                            <th>Group 2nd place</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Finish as predicted</strong></td>
+                            <td>3</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Otherwise qualifies</strong></td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <p style="clear: left;">Points are only awarded for teams that qualify for the knockout round.</p>
+        <p>
+            For an example of the above points table, if you pick Spain to win Group B and they win Group B, then you earn 3 points for that pick. Alternatively,
+            if you pick Spain to win Group B and they do not win the group, but qualify for the knockout round, then you earn 1 point.
+        </p>
+
+        <p>
+            If you pick Portugal to finish second in Group B and they finish second in the group, then you earn 2 points for that pick. Alternatively,
+            if you pick Portugal to finish second in Group B and they do not finish second in the group, but qualify for the knockout round, then you earn 1 point.
+
+        </p><div style="float: left;">
+            <h4>Knockout Round Matches</h4>
+            <div class="table-responsive">
+                <table class="table table-bordered table-condensed table-hover">
+                    <thead>
+                        <tr>
+                            <th>Round of 16</th>
+                            <th>Quarter-Final</th>
+                            <th>Semi-Final</th>
+                            <th>Final</th>
+                            <th>3rd Place</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>5</td>
+                            <td>10</td>
+                            <td>15</td>
+                            <td>20</td>
+                            <td>12</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+        <p style="clear: left;">Contestants are ranked after each round based on total points from highest to lowest. Pool winners are declared after the World Cup Final. (參賽者按照從最高到最低的總分數在每輪之後進行排名。世界杯決賽后宣布優勝者。)</p>
+        
+        <h3>详细中文遊戲規則：</h3>
+        <p>在每一個空格裏，選擇你認為會勝出的一隊。</p>
+        <p>得分根據以下：</p>
+        <br>
+        <p>分組賽：</p>
+        <p>- 選對分組首名得3分，第二名得2分。</p>
+        <p>- 選對出線隊伍，但名次不正確，得1分。</p>
+        <p>例如：</p>
+        <p>西班牙以首名分組賽出線，選西班牙首名得3分，選西班牙次名得1分。西班牙以次名出線，選西班牙第一名得1分，選第二名得2分。</p>
+        <br>
+        <p>十六強淘汰賽：選對得 5分</p>
+        <br>
+        <p>八強淘汰賽：選對得10分</p>
+        <br>
+        <p>四強淘汰賽：選對得15分</p>
+        <br>
+        <p>決賽：選對得20分</p>
+        <br>
+        <p>季軍戰：選對得12分</p>
+
+        <h3>Important Points (注意事项)</h3>
+        <h4>Pick Deadline</h4>
+        <p>The deadline for joining the pool is Thursday June 14, 2018 at 11:00 am Eastern, kickoff of the opening game of the World Cup.</p>
+        <h4>Point Scoring</h4>
+        <p>Each team that you pick to win a particular match does not need to be playing the team you predicted them to face for you to score points for the win.(淘汰賽階段，只要你選擇的隊伍勝出，你無需同時選出它对壘的球隊，即可赢取你應得的分数。)</p>
+
+        <h3>Prize of Pool (彩池奖金)</h3>
+        <p>Every entry costs $5. (每注5加元。總獎金 = 總投注數目 x 5加元)</p>
+        
+            <p>If total # of entries are more than 30, 1st wins 60% prize of the pool; 2nd wins 30%; 3rd wins 10%; last place finisher gets back $5 from the first place prize money. (如果總投注數達到30注以上，第一名獲得60％彩池獎金;第二名獲30％;第三名獲10％。包尾者取回本金，由第一名彩金扣出。)</p>
+            <p>If total # of entries are less than 30, 1st wins 70% prize of the pool; 2nd wins 30%; last place finisher gets back $5 from the first place prize money. (如果總投注數少於30注，則第一名獲70％彩池獎金; 第二名獲30％。包尾者取回本金，由第一名彩金扣出。)</p>
+            <p>**To add to the fun of the pool, SFC admin will sponsor two additional prizes: the 4th prize and the 5th prize, which will get fixed amount of $15 and $10 respectively. (鑒於如此高漲的參與熱情，SFC Admin決定增加第四名和第五名獎項，分別可獲得$15和$10獎金。增加獎項獎金由SFC俱樂部贊助！)</p>
+    	</div>
+    </div>
+    
+    <hr>
+    <div style="text-align: center">
+        <img src="/img/schedule.png" />
+    </div>
+    
+    </div> <!-- End of Container-fluid -->
+    
+<!-- Default Statcounter code for SFC Club Website https://oursfc.herokuapp.com/wcpool2018 -->
+<script type="text/javascript">
+var sc_project=11740733; 
+var sc_invisible=1; 
+var sc_security="9dd208d9"; 
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><a title="Web Analytics Made Easy - StatCounter" href="http://statcounter.com/" target="_blank"><img class="statcounter" src="//c.statcounter.com/11740733/0/9dd208d9/1/" alt="Web Analytics Made Easy - StatCounter"></a></div></noscript>
+<!-- End of Statcounter Code -->
+    
+    <button class="back-to-top-button" aria-label="back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12">
+            </polyline>
+        </svg>
+    </button>
+    
+    <script src="./js/validator.min.js"></script> <!-- http://1000hz.github.io/bootstrap-validator -->
+    <script type="text/javascript" src="/js/d3.v4.min.js"></script>
+    <script type='text/javascript' src="/js/jquery.tablesorter.min.js"></script>
+    <script type='text/javascript' src="/js/sfc.js"></script>
+    <script>
+    	/*
+    	  if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.getRegistrations()
+                .then(function(registrations) {
+                    for(let registration of registrations) {
+                        console.log(registration);
+                        registration.unregister();
+                    }
+                });
+
+            caches.delete('runtime').then(function(flag) {
+                if (flag) console.log('clear cache::runtime');
+            });
+            caches.delete('precache-v1').then(function(flag) {
+                if (flag) console.log('clear cache::precache-v1');
+            });
+        }
+    	*/
+        var entry = {
+            "name" : "",
+            "group_a": [],
+            "group_b": [],
+            "group_c": [],
+            "group_d": [],
+            "group_e": [],
+            "group_f": [],
+            "group_g": [],
+            "group_h": [],
+            "r16": [],
+            "qf": [],
+            "sf": [],
+            "final": "",
+            "third": "",
+            "timestamp": ""
+        }
+        var entries = [];
+        
+        var player = {
+            name: "",
+            group: 0,
+            r16: 0,
+            qf: 0,
+            sf: 0,
+            final: 0,
+            third: 0,
+            points: 0
+        }
+        var players = [];
+        var points = [];
+        var chartNode = {
+            index: 0,
+            name: "",
+            point: 0
+        }
+        var chartData = [];
+        var teamsrank = {
+            "group_a": ['Uruguay(乌拉圭)', 'Russia(俄罗斯)', 'Saudi Arabia(沙特)', 'Egypt(埃及)'],
+            "group_b": ['Spain(西班牙)', 'Portugal(葡萄牙)', 'IR Iran(伊朗)', 'Morocco(摩洛哥)'],
+            "group_c": ['France(法国)', 'Denmark(丹麦)', 'Peru(秘鲁)', 'Australia(澳大利亚)'],
+            "group_d": ['Croatia(克罗地亚)', 'Argentina(阿根廷)', 'Nigeria(尼日利亚)', 'Iceland(冰岛)'],
+            "group_e": ['Brazil(巴西)', 'Switzerland(瑞士)', 'Serbia(塞尔维亚)', 'Costa Rica(哥斯达黎加)'],
+            "group_f": ['Sweden(瑞典)', 'Mexico(墨西哥)', 'Korea Republic(韩国)', 'Germany(德国)'],
+            "group_g": ['Belgium(比利时)', 'England(英格兰)', 'Tunisia(突尼斯)', 'Panama(巴拿马)'],
+            "group_h": ['Colombia(哥伦比亚)', 'Japan(日本)', 'Senegal(塞内加尔)', 'Poland(波兰)'],
+            "r16": ['France(法国)', 'Uruguay(乌拉圭)', 'Russia(俄罗斯)', 'Croatia(克罗地亚)', 'Brazil(巴西)', 'Belgium(比利时)', 'Sweden(瑞典)', 'England(英格兰)'],
+            "qf": ['France(法国)', 'Belgium(比利时)', 'England(英格兰)', 'Croatia(克罗地亚)'],
+            "sf": ['France(法国)', 'Croatia(克罗地亚)'],
+            "final": "France(法国)",
+            "third": "Belgium(比利时)"
+        }
+
+        function generateTimestamp() {
+            var d = new Date();
+            return d.getFullYear() + "-" + ("0"+(d.getMonth()+1)).slice(-2) + "-" +
+                             ("0" + d.getDate()).slice(-2)+ " " + ("0" + d.getHours()).slice(-2) + ":" + ("0" + d.getMinutes()).slice(-2) + ":" + ("0" + d.getSeconds()).slice(-2);
+        }
+
+        function trancateValue(str, symbol) {
+            var l = str.indexOf(symbol) + 1;
+            return str.substr(0, l);
+        }
+
+        function generateJsonObj() {
+            var d = $.extend(true, {}, entry); 
+
+            d.name = $('#alias').val().trim();
+            
+            d.group_a.push(trancateValue($("#GroupA_1 option:selected" ).text(), ')'));
+            d.group_a.push(trancateValue($("#GroupA_2 option:selected" ).text(), ')'));
+            d.group_b.push(trancateValue($("#GroupB_1 option:selected" ).text(), ')'));
+            d.group_b.push(trancateValue($("#GroupB_2 option:selected" ).text(), ')'));
+            d.group_c.push(trancateValue($("#GroupC_1 option:selected" ).text(), ')'));
+            d.group_c.push(trancateValue($("#GroupC_2 option:selected" ).text(), ')'));
+            d.group_d.push(trancateValue($("#GroupD_1 option:selected" ).text(), ')'));
+            d.group_d.push(trancateValue($("#GroupD_2 option:selected" ).text(), ')'));
+            d.group_e.push(trancateValue($("#GroupE_1 option:selected" ).text(), ')'));
+            d.group_e.push(trancateValue($("#GroupE_2 option:selected" ).text(), ')'));
+            d.group_f.push(trancateValue($("#GroupF_1 option:selected" ).text(), ')'));
+            d.group_f.push(trancateValue($("#GroupF_2 option:selected" ).text(), ')'));
+            d.group_g.push(trancateValue($("#GroupG_1 option:selected" ).text(), ')'));
+            d.group_g.push(trancateValue($("#GroupG_2 option:selected" ).text(), ')'));
+            d.group_h.push(trancateValue($("#GroupH_1 option:selected" ).text(), ')'));
+            d.group_h.push(trancateValue($("#GroupH_2 option:selected" ).text(), ')'));
+
+            d.r16.push(trancateValue($("#R16_49 option:selected" ).text(), ')'));
+            d.r16.push(trancateValue($("#R16_50 option:selected" ).text(), ')'));
+            d.r16.push(trancateValue($("#R16_53 option:selected" ).text(), ')'));
+            d.r16.push(trancateValue($("#R16_54 option:selected" ).text(), ')'));
+            d.r16.push(trancateValue($("#R16_51 option:selected" ).text(), ')'));
+            d.r16.push(trancateValue($("#R16_52 option:selected" ).text(), ')'));
+            d.r16.push(trancateValue($("#R16_55 option:selected" ).text(), ')'));
+            d.r16.push(trancateValue($("#R16_56 option:selected" ).text(), ')'));
+
+            d.qf.push(trancateValue($("#QF_57 option:selected" ).text(), ')'));
+            d.qf.push(trancateValue($("#QF_58 option:selected" ).text(), ')'));
+            d.qf.push(trancateValue($("#QF_59 option:selected" ).text(), ')'));
+            d.qf.push(trancateValue($("#QF_60 option:selected" ).text(), ')'));
+
+            d.sf.push(trancateValue($("#SF_61 option:selected" ).text(), ')'));
+            d.sf.push(trancateValue($("#SF_62 option:selected" ).text(), ')'));
+
+            d.final = trancateValue($("#Final option:selected" ).text(), ')');
+            d.third = trancateValue($("#Third option:selected" ).text(), ')');
+
+            d.timestamp = generateTimestamp();
+
+            //console.log(JSON.stringify(d));
+            //saveToMlab(d);
+        }
+
+        function saveToMlab(oData) {
+            let surl = 'https://api.mlab.com/api/1/databases/sfcdb/collections/wcpool2018?apiKey=m1QZo1IgF6SGC5zAgYCcseYPWf5xIsRS';
+            sfc.myAjax(surl, oData, 'POST').then( (data) => {
+                if (data.r16.length === 8) {
+                    alert('Successful! Well done.');
+                    $('#alias').val('');
+                }
+                else
+                    alert('Failure. Please submit picks again.')
+                //console.log(data);
+            });
+        }
+
+        function generateEntry() {
+            if ($('#alias').val()) {
+                generateJsonObj();
+
+                var sh = "";
+                sh += '<p><b>Alias: </b>' + $('#alias').val() + '</p>';
+                sh += '<br />';
+                sh += '<p>Group Stage:</p>';
+                sh += '<p>Group A -- 1st: ' + $("#GroupA_1 option:selected" ).text() + ', 2nd: ' + $("#GroupA_2 option:selected" ).text() + '</p>';
+                sh += '<p>Group B -- 1st: ' + $("#GroupB_1 option:selected" ).text() + ', 2nd: ' + $("#GroupB_2 option:selected" ).text() + '</p>';
+                sh += '<p>Group C -- 1st: ' + $("#GroupC_1 option:selected" ).text() + ', 2nd: ' + $("#GroupC_2 option:selected" ).text() + '</p>';
+                sh += '<p>Group D -- 1st: ' + $("#GroupD_1 option:selected" ).text() + ', 2nd: ' + $("#GroupD_2 option:selected" ).text() + '</p>';
+                sh += '<p>Group E -- 1st: ' + $("#GroupE_1 option:selected" ).text() + ', 2nd: ' + $("#GroupE_2 option:selected" ).text() + '</p>';
+                sh += '<p>Group F -- 1st: ' + $("#GroupF_1 option:selected" ).text() + ', 2nd: ' + $("#GroupF_2 option:selected" ).text() + '</p>';
+                sh += '<p>Group G -- 1st: ' + $("#GroupG_1 option:selected" ).text() + ', 2nd: ' + $("#GroupG_2 option:selected" ).text() + '</p>';
+                sh += '<p>Group H -- 1st: ' + $("#GroupH_1 option:selected" ).text() + ', 2nd: ' + $("#GroupH_2 option:selected" ).text() + '</p>';
+                sh += '<br />';
+                sh += '<p>Round of 16: ' + $("#R16_49 option:selected" ).text() + ', ' + $("#R16_50 option:selected" ).text() + 
+                      ', ' + $("#R16_53 option:selected" ).text() + ', ' + $("#R16_54 option:selected" ).text() + 
+                      ', ' + $("#R16_51 option:selected" ).text() + ', ' + $("#R16_52 option:selected" ).text() + 
+                      ', ' + $("#R16_55 option:selected" ).text() + ', ' + $("#R16_56 option:selected" ).text() + '</p>';
+                sh += '<br />';
+                sh += '<p>Quarter-Finals: ' + $("#QF_57 option:selected" ).text() + ', ' + $("#QF_58 option:selected" ).text() + 
+                      ', ' + $("#QF_59 option:selected" ).text() + ', ' + $("#QF_60 option:selected" ).text() + '</p>';
+                sh += '<br />';
+                sh += '<p>Semi-Finals: ' + $("#SF_61 option:selected" ).text() + ', ' + $("#SF_62 option:selected" ).text() + '</p>';
+                sh += '<br />';
+                sh += '<p>Final: ' + $("#Final option:selected" ).text() + '</p>';
+                sh += '<br />';
+                sh += '<p>3rd Place: ' + $("#Third option:selected" ).text() + '</p>';
+                sh += '<br />'
+                
+                sh += '<p><b>Timestamp: </b>' + generateTimestamp() + '</p>';
+
+                $('#entrySection').empty();
+                $('#entrySection').html(sh);
+            }
+            else {
+                alert("Please input your alias. (请输入您的别名)");
+            }
+        }
+        
+        function displayEntriesSimple(entries) {
+            var sh = "";
+						sh += sh += '<p><b><span class="pick-cell">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name</span><span class="pick-cell">&nbsp;&nbsp;&nbsp;&nbsp;Final</span><span class="pick-cell">&nbsp;&nbsp;&nbsp;&nbsp;Third</span></b></p>';
+            for (var i=0, l=entries.length; i<l; i++) {
+                sh += '<p><span class="pick-cell"><b>' + (i+1) + ')  ' + entries[i].name + ':</b></span>' + '<span class="pick-cell">' + entries[i].final + ';</span><span class="pick-cell">' + entries[i].third + '</span></p>';
+            }
+
+            $('#entrySection').empty();
+            $('#entrySection').html(sh);
+        }
+        
+        function loadEntries() {
+            let surl = 'https://api.mlab.com/api/1/databases/sfcdb/collections/wcpool2018?apiKey=m1QZo1IgF6SGC5zAgYCcseYPWf5xIsRS&s={"name":1}';
+            let oData = null;
+            sfc.myAjax(surl, oData, 'GET').then((data) => {
+                console.log("Total entries = %d", data.length);
+                //entries = JSON.parse(data); // from localStorage
+                entries = data;  // from mLab
+                console.log(JSON.stringify(data, null, 2));
+                localStorage.setItem("entries", JSON.stringify(entries));
+                //displayEntriesSimple(entries);
+                calcPlayerPoints();
+                initBarChart();
+            });
+        }
+        
+        function calcPlayerPoints() {
+            players.length = 0;
+            points.length = 0;
+            chartData.length = 0;
+
+            for (var i=0, l=entries.length; i<l; i++) {
+                let p = $.extend(true, {}, player); 
+                p.name = entries[i].name;
+                // group A
+                if (entries[i].group_a[0] === teamsrank.group_a[0]) {
+                    p.group += 3;
+                }
+                else if (entries[i].group_a[0] === teamsrank.group_a[1]) {
+                    p.group += 1;
+                }
+                if (entries[i].group_a[1] === teamsrank.group_a[1]) {
+                    p.group += 2;
+                }
+                else if (entries[i].group_a[1] === teamsrank.group_a[0]) {
+                    p.group += 1;
+                }
+                // group B
+                if (entries[i].group_b[0] === teamsrank.group_b[0]) {
+                    p.group += 3;
+                }
+                else if (entries[i].group_b[0] === teamsrank.group_b[1]) {
+                    p.group += 1;
+                }
+                if (entries[i].group_b[1] === teamsrank.group_b[1]) {
+                    p.group += 2;
+                }
+                else if (entries[i].group_b[1] === teamsrank.group_b[0]) {
+                    p.group += 1;
+                }
+                // group C
+                if (entries[i].group_c[0] === teamsrank.group_c[0]) {
+                    p.group += 3;
+                }
+                else if (entries[i].group_c[0] === teamsrank.group_c[1]) {
+                    p.group += 1;
+                }
+                if (entries[i].group_c[1] === teamsrank.group_c[1]) {
+                    p.group += 2;
+                }
+                else if (entries[i].group_c[1] === teamsrank.group_c[0]) {
+                    p.group += 1;
+                }
+                // group D
+                if (entries[i].group_d[0] === teamsrank.group_d[0]) {
+                    p.group += 3;
+                }
+                else if (entries[i].group_d[0] === teamsrank.group_d[1]) {
+                    p.group += 1;
+                }
+                if (entries[i].group_d[1] === teamsrank.group_d[1]) {
+                    p.group += 2;
+                }
+                else if (entries[i].group_d[1] === teamsrank.group_d[0]) {
+                    p.group += 1;
+                }
+                // group E
+                if (entries[i].group_e[0] === teamsrank.group_e[0]) {
+                    p.group += 3;
+                }
+                else if (entries[i].group_e[0] === teamsrank.group_e[1]) {
+                    p.group += 1;
+                }
+                if (entries[i].group_e[1] === teamsrank.group_e[1]) {
+                    p.group += 2;
+                }
+                else if (entries[i].group_e[1] === teamsrank.group_e[0]) {
+                    p.group += 1;
+                }
+                // group F
+                if (entries[i].group_f[0] === teamsrank.group_f[0]) {
+                    p.group += 3;
+                }
+                else if (entries[i].group_f[0] === teamsrank.group_f[1]) {
+                    p.group += 1;
+                }
+                if (entries[i].group_f[1] === teamsrank.group_f[1]) {
+                    p.group += 2;
+                }
+                else if (entries[i].group_f[1] === teamsrank.group_f[0]) {
+                    p.group += 1;
+                }
+                // group G
+                if (entries[i].group_g[0] === teamsrank.group_g[0]) {
+                    p.group += 3;
+                }
+                else if (entries[i].group_g[0] === teamsrank.group_g[1]) {
+                    p.group += 1;
+                }
+                if (entries[i].group_g[1] === teamsrank.group_g[1]) {
+                    p.group += 2;
+                }
+                else if (entries[i].group_g[1] === teamsrank.group_g[0]) {
+                    p.group += 1;
+                }
+                // group H
+                if (entries[i].group_h[0] === teamsrank.group_h[0]) {
+                    p.group += 3;
+                }
+                else if (entries[i].group_h[0] === teamsrank.group_h[1]) {
+                    p.group += 1;
+                }
+                if (entries[i].group_h[1] === teamsrank.group_h[1]) {
+                    p.group += 2;
+                }
+                else if (entries[i].group_h[1] === teamsrank.group_h[0]) {
+                    p.group += 1;
+                }
+                
+                let j = 0;
+                if (teamsrank.r16.length > 0) {
+                    for (j = 0; j < 8; j++) {
+                        if (teamsrank.r16.indexOf(entries[i].r16[j]) >= 0) p.r16 += 5; 
+                    }
+                }
+                if (teamsrank.qf.length > 0) {
+                    for (j = 0; j < 4; j++) {
+                        if (teamsrank.qf.indexOf(entries[i].qf[j]) >= 0) p.qf += 10; 
+                    }
+                }
+                if (teamsrank.sf.length > 0) {
+                    for (j = 0; j < 2; j++) {
+                        if (teamsrank.sf.indexOf(entries[i].sf[j]) >= 0) p.sf += 15; 
+                    }
+                }
+
+                if (teamsrank.final === entries[i].final) p.final = 20;
+                if (teamsrank.third === entries[i].third) p.third = 12;
+
+                p.total = p.group + p.r16 + p.qf + p.sf + p.final + p.third;
+                players.push(p);
+                points.push(p.total);
+            }
+
+            players.sort(function(a,b) {return (b.total > a.total) ? 1 : ((a.total > b.total) ? -1 : 0);} );  // Descendant
+            
+            for (var i=0; i<10; i++) {
+                var node = $.extend(true, {}, chartNode);
+                node.index = i + 1;
+                node.name = players[i].name;
+                node.point = players[i].total;
+                chartData.push(node);
+            }
+
+            //console.log(players);
+            displayRanking(players);
+        }
+
+        function displayRanking(data) {
+            let sh = "";
+
+            sh += '<table id="tbData" class="tbData hoverable" style="width: 99%; margin: 5px auto;">';
+            sh += '  <thead>';
+            sh += '    <tr>';
+            sh += '      <th>Rank</th>';
+            sh += '      <th>Name</th>';
+            sh += '      <th>GS</th>';
+            sh += '      <th>R16</th>';
+            sh += '      <th>QF</th>';
+            sh += '      <th>SF</th>';
+            sh += '      <th>1st</th>';
+            sh += '      <th>3rd</th>';
+            sh += '      <th>Total</th>';
+            sh += '    </tr>';
+            sh += '  </thead>';
+            sh += '  <tbody>';
+
+            for (var i = 0, l = data.length; i < l; i++) {
+                sh += '<tr>';
+                sh += '  <td >' + (i + 1) + '</td>';
+                sh += '  <td >' + data[i].name + '</td>';
+                sh += '  <td class="cb-cell">' + data[i].group + '</td>';
+                sh += '  <td class="cb-cell">' + data[i].r16 + '</td>';
+                sh += '  <td class="cb-cell">' + data[i].qf + '</td>';
+                sh += '  <td class="cb-cell">' + data[i].sf + '</td>';
+                sh += '  <td class="cb-cell">' + data[i].final + '</td>';
+                sh += '  <td class="cb-cell">' + data[i].third + '</td>';
+                sh += '  <td class="cb-cell">' + data[i].total + '</td>';
+                sh += '</tr>';
+            }
+            
+            sh += '</tbody></table>';
+
+            $('div#resultsSection').html(sh);
+
+            $('#tbData').tablesorter();
+        }
+        
+        function initBarChart() {
+            var x = d3.scaleLinear()
+                .domain([0, d3.max(points)])
+                .range([0, $('.container-fluid').width()]);		// fit to minimal mobile width
+
+            d3.select(".chart")
+              .selectAll("div")
+              .data(chartData)
+              .enter().append("div")
+              .style("width", function (d) { return x(d.point) + "px"; })  // x(d) ???
+              .text(function (d) { return d.index + '-' + d.name + ": " + d.point; });
+        }
+        
+        function backToTop() {
+            var offset = 120;
+            var duration = 500;
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > offset) {
+                    $('.back-to-top-button').fadeIn(duration);
+                } else {
+                    $('.back-to-top-button').fadeOut(duration);
+                }
+            });
+
+            $('.back-to-top-button').click(function (event) {
+                $("html, body").animate({ scrollTop: 0 }, duration);
+                return false;
+            })
+        }
+    </script>
+    
+    <script language="JavaScript" type="text/javascript">
+
+        jQuery(document).ready(function() {
+            $('#pickForm').validator().on('submit', function (e) {
+              if (e.isDefaultPrevented()) {
+                // handle the invalid form...
+                $('#pickFormInvalidModal').modal('show');
+              } else {
+                  e.preventDefault();
+                  e.stopPropagation();
+
+                  // everything looks good!
+                  generateEntry();
+              }
+            });
+    
+            $(function () {
+                $('#pickFormInvalidModal').on('click', '.submit-pick-form', function (e) {
+                    $('#pickFormInvalidModal').modal('hide');
+                    $('#pickForm').validator('destroy');
+                    $('#pickForm').find('select').prop('required', false);
+                    $('#pickForm')[0].submit();
+                });
+            });
+            
+            if (localStorage.getItem("entries")) {
+                entries = JSON.parse(localStorage.getItem("entries"));
+                //displayEntriesSimple(entries);
+                calcPlayerPoints();
+                initBarChart();
+            }
+            else { // after cut off picking, enable below block
+                loadEntries();
+            }
+            
+            $('#btnRule').on('click', function(e) {
+                if ($('#ruleContent').is(":visible")) {
+                    $(this).text('Expand(打开)');
+                    $('#ruleContent').hide('fast');
+                }
+                else {
+                    $(this).text('Close(关闭)');
+                    $('#ruleContent').show('fast');
+                }
+            });
+
+            $('#btnPieChart').on('click', function(e) {
+                if ($('#pieChart').is(":visible")) {
+                    $(this).text('Expand(打开)');
+                    $('#pieChart').hide('fast');
+                }
+                else {
+                    $(this).text('Close(关闭)');
+                    $('#pieChart').show('fast');
+                }
+            });
+            
+            $('#btnEntry').on('click', function(e) {
+                if ($('#entrySection').is(":visible")) {
+                    $(this).text('Expand(打开)');
+                    $('#entrySection').hide('fast');
+                }
+                else {
+                    $(this).text('Close(关闭)');
+                    $('#entrySection').show('fast');
+                }
+            });
+            
+            backToTop();
+        });
+        
+
+    </script>
+    
+</body></html>
