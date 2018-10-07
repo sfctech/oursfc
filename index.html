@@ -4,13 +4,38 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SfC Home Site</title>
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">-->
     <link rel="stylesheet" href="css/bulma-demo.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
     <style>
         .main-content .container a {
-            font-size: 1.5em;
+            font-size: 1.2em;
+        }
+        .is-tow-columns {
+            width: 50%;
+        }
+        .is-three-columns {
+            width: 33%;
+        }
+        .is-four-columns {
+            width: 25%;
+        }
+        .column {
+            border: 1px solid #c0c0c0;
+            border-radius: 3px;
+            box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+            margin: 10px;
+            background: aliceblue;
+            display: inline-flex;
+            align-items: center;
+            width: 96%;
+        }
+        .column > img {
+            margin-right: 12px;
+            width: 40px;
+            height: 40px;
         }
     </style>
 </head>
@@ -40,20 +65,27 @@
                 </div>
             </nav>
         </header>
-        <main class="main-content" style="margin-top: 40px">
+        <main class="main-content" style="margin-top: 120px">
             <section class="section">
                 <div class="container">
-                	  <div class="columns is-vcentered" style="display: flex; background: no-repeat center/100% url('./img/russia-wc2018-statium.jpg'); background-size: cover; height: -webkit-fill-available;">
-                        <a href="/2018wcpool" target="_blank" style="margin: auto;font-size: 2em;font-weight: 500;color: aliceblue;">Pool of World Cup 2018</a>
+                    <div class="columns">
+                        <div class="column is-vcentered is-one-third">
+                            <img src="img/kisspng-prematch-900x920.jpg" />
+                            <a href="/2018fr">2018 Friday Outdoor Matches Result</a>
+                        </div>
+
+                        <div class="column is-vcentered is-one-third">
+                            <img src="img/Manchester_United_Home_Jersey_15-16_copy_345x@2x.png" />
+                            <a href="/jersey">SFC Members Jersey Size</a>
+                        </div>
+
+                        <div class="column is-vcentered is-one-third">
+                            <!--<a href="/2018wcpool" target="_blank" style="margin: auto;font-size: 2em;font-weight: 500;color: aliceblue;">Pool of World Cup 2018</a>-->
+                            <img src="img/WC2018-logo.png" />
+                            <a href="/2018wcpool">Pool of World Cup 2018</a>
+                        </div>
                     </div>
-                    <!--<br />
-                    <div class="columns is-vcentered">
-                        <a href="/2018fr">2018 Friday Outdoor Matches Result</a>
-                    </div>
-                    <br />
-                    <div class="columns is-vcentered">
-                        <a href="/gssp">Goalies and Substitutes Selection Policy</a>
-                    </div>-->
+
                 </div>
             </section>
         </main>
@@ -63,15 +95,27 @@
     <script type='text/javascript' src="/js/sfc.js"></script>
 
     <script>
-	$(document).ready(function(){
-	  //let surl = 'https://api.mlab.com/api/1/databases/sfcdb/collections/MatchesOutdoor2018?apiKey=m1QZo1IgF6SGC5zAgYCcseYPWf5xIsRS';
-		//let oData = null;
-		//sfc.myAjax(surl, oData, 'GET').then( (data) => {
-		//    console.log(data);
-		//});
+	    $(document).ready(function() {
 
-	});
-
+	    });
     </script>
+
+    <!-- Default Statcounter code -->
+    <script type="text/javascript">
+        var sc_project=11772899;
+        var sc_invisible=0;
+        var sc_security="77b35df5";
+        var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "http://www.");
+        document.write("<sc"+"ript type='text/javascript' src='" + scJsHost + "statcounter.com/counter/counter.js'></"+"script>");
+    </script>
+    <noscript>
+        <div class="statcounter">
+            <a title="Web Analytics Made Easy - StatCounter" href="http://statcounter.com/"
+               target="_blank">
+                <img class="statcounter" src="//c.statcounter.com/11772899/0/77b35df5/0/" alt="Web Analytics Made Easy - StatCounter">
+            </a>
+        </div>
+    </noscript>
+    <!-- End of Statcounter Code -->
 </body>
 </html>
