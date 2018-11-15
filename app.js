@@ -85,6 +85,13 @@ let requestTime = function (req, res, next) {
 app.use(requestTime);
 app.use(myLogger);
 
+// to enable cross-origin resource sharing (CORS) in the express.js framework on node.js
+app.all('*', function (req, res, next) {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Methods', 'PUT, GET, POST, DELETE, OPTIONS');
+    res.header('Access-Control-Allow-Headers', 'Content-Type');
+    next();
+});
 
 app.get('/d', [cb0, cb1], function (req, res, next) {
   console.log('the response will be sent by the next function ...');
@@ -111,9 +118,13 @@ app.get('/', (req, res) => {
     .get('/gssp', (req, res) => res.sendFile(path.join(__dirname + '/gssp.html')))
     .get('/assets', (req, res) => res.sendFile(path.join(__dirname + '/assets.html')))
     .get('/2018fr', (req, res) => res.sendFile(path.join(__dirname + '/2018FridayResult.html')))
+    .get('/2018dome', (req, res) => res.sendFile(path.join(__dirname + '/2018DomeResult.html')))
     .get('/jersey', (req, res) => res.sendFile(path.join(__dirname + '/jersey-size.html')))
     .get('/2018wcpool', (req, res) => res.sendFile(path.join(__dirname + '/wcpool2018.html')))
-    .get('/stat', (req, res) => res.sendFile(path.join(__dirname + '/resultStatistic.html')));
+    .get('/stat2018fr', (req, res) => res.sendFile(path.join(__dirname + '/resultStatistic.html')))
+    .get('/stat2018dome', (req, res) => res.sendFile(path.join(__dirname + '/2018DomeStatistic.html')))
+    .get('/face', (req, res) => res.sendFile(path.join(__dirname + '/facePlusPlus.html')))
+    ;
    //.get('*', (req, res) => res.sendFile(path.join(__dirname + '/404.html')));
 
 app.use(function (req, res, next) {
