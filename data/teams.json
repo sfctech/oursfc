@@ -1,0 +1,34 @@
+﻿[
+    {
+        "code": "AJ",
+        "name": "Ajax"
+    },
+    {
+        "code": "BA",
+        "name": "Barcelona"
+    },
+    {
+        "code": "JU",
+        "name": "Juventus"
+    },
+    {
+        "code": "LP",
+        "name": "Liverpool"
+    },
+    {
+        "code": "MC",
+        "name": "Man. City"
+    },
+    {
+        "code": "MU",
+        "name": "Man. United"
+    },
+    {
+        "code": "PO",
+        "name": "Porto"
+    },
+    {
+        "code": "To",
+        "name": "Tottenham"
+    }
+]

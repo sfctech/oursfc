@@ -1,0 +1,14 @@
+﻿[
+	{
+		"round": 0,
+		"desc": "Quarter Final"
+	},
+	{
+		"round": 1,
+		"desc": "Semi Final"
+	},
+	{
+		"round": 2,
+		"desc": "Final"
+	}
+]

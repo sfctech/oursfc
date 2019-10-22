@@ -1,0 +1,184 @@
+﻿[
+    {
+        "teamName": "TO",
+        "round": 0,
+        "result": "w",
+        "score": 1,
+        "rival": "MC"
+    },
+    {
+        "teamName": "MC",
+        "round": 0,
+        "result": "l",
+        "score": 0,
+        "rival": "TO"
+    },
+    {
+        "teamName": "LP",
+        "round": 0,
+        "result": "w",
+        "score": 2,
+        "rival": "PO"
+    },
+    {
+        "teamName": "PO",
+        "round": 0,
+        "result": "l",
+        "score": 0,
+        "rival": "LP"
+    },
+    {
+        "teamName": "AJ",
+        "round": 0,
+        "result": "t",
+        "score": 1,
+        "rival": "JU"
+    },
+    {
+        "teamName": "JU",
+        "round": 0,
+        "result": "t",
+        "score": 1,
+        "rival": "AJ"
+    },
+    {
+        "teamName": "MU",
+        "round": 0,
+        "result": "l",
+        "score": 0,
+        "rival": "BA"
+    },
+    {
+        "teamName": "BA",
+        "round": 0,
+        "result": "w",
+        "score": 1,
+        "rival": "MU"
+    },
+    {
+        "teamName": "BA",
+        "round": 0,
+        "result": "w",
+        "score": 3,
+        "rival": "MU"
+    },
+    {
+        "teamName": "MU",
+        "round": 0,
+        "result": "l",
+        "score": 0,
+        "rival": "BA"
+    },
+    {
+        "teamName": "JU",
+        "round": 0,
+        "result": "l",
+        "score": 1,
+        "rival": "AJ"
+    },
+    {
+        "teamName": "AJ",
+        "round": 0,
+        "result": "w",
+        "score": 2,
+        "rival": "JU"
+    },
+    {
+        "teamName": "PO",
+        "round": 0,
+        "result": "l",
+        "score": 1,
+        "rival": "LP"
+    },
+    {
+        "teamName": "LP",
+        "round": 0,
+        "result": "w",
+        "score": 4,
+        "rival": "PO"
+    },
+    {
+        "teamName": "MC",
+        "round": 0,
+        "result": "w",
+        "score": 4,
+        "rival": "TO"
+    },
+    {
+        "teamName": "TO",
+        "round": 0,
+        "result": "l",
+        "score": 3,
+        "rival": "MC"
+    },
+    {
+        "teamName": "TO",
+        "round": 1,
+        "result": "l",
+        "score": 0,
+        "rival": "AJ"
+    },
+    {
+        "teamName": "AJ",
+        "round": 1,
+        "result": "w",
+        "score": 1,
+        "rival": "TO"
+    },
+    {
+        "teamName": "BA",
+        "round": 1,
+        "result": "w",
+        "score": 3,
+        "rival": "LP"
+    },
+    {
+        "teamName": "LP",
+        "round": 1,
+        "result": "l",
+        "score": 0,
+        "rival": "BA"
+    },
+    {
+        "teamName": "LP",
+        "round": 1,
+        "result": "w",
+        "score": 4,
+        "rival": "BA"
+    },
+    {
+        "teamName": "BA",
+        "round": 1,
+        "result": "l",
+        "score": 0,
+        "rival": "LP"
+    },
+    {
+        "teamName": "AJ",
+        "round": 1,
+        "result": "l",
+        "score": 2,
+        "rival": "TO"
+    },
+    {
+        "teamName": "TO",
+        "round": 1,
+        "result": "w",
+        "score": 3,
+        "rival": "AJ"
+    },
+    {
+        "teamName": "LP",
+        "round": 2,
+        "result": "w",
+        "score": 2,
+        "rival": "TO"
+    },
+    {
+        "teamName": "TO",
+        "round": 2,
+        "result": "l",
+        "score": 0,
+        "rival": "LP"
+    }
+]
