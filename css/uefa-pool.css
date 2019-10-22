@@ -1,0 +1,88 @@
+﻿::placeholder {
+    color: #888;
+}
+::-webkit-input-placeholder {
+    color: #888;
+}
+
+#dvHeader {
+	display: flex;
+	justify-content: center;
+}
+
+#dvHeader > img {
+  width: 120px;
+  margin-right: 20px;
+}
+
+#dvHeader > span {
+  font-size: 2em;
+  font-weight: 700;
+  color: #666;
+}
+
+.dvLabel {
+	font-size: 1em;
+    font-weight: 600;
+    color: #888;
+    margin-top: 5px;
+}
+
+#funcBar1, #funcBar2 {
+	margin-bottom: 30px;
+}
+
+#btnRank {
+	overflow: visible;
+}
+
+#btnRank > span.badge {
+    min-width: 2rem;
+    /*font-size: .8rem;*/
+    font-weight: 600;
+    /*line-height: 30px;*/
+    color: #fff;
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.chart {
+    padding: 0 20px 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px dotted #ddd;
+}
+.chart div {
+  font: 10px sans-serif;
+  background-color: orange;
+  text-align: right;
+  padding: 2px 3px;
+  margin: 1px;
+  color: white;
+}
+
+    .chart div:nth-of-type(1), .chart div:nth-of-type(2), .chart div:nth-of-type(3) {
+        background-color: blue;
+    }
+
+    .chart div:nth-last-of-type(1) {
+        background-color: gray;
+    }
+
+@media (max-width: 768px) {
+    #btnRank, #btnSave, #btnDele {
+		width: 60px;
+	}
+}
+
+@viewport{
+    width: extend-to-zoom;
+    zoom: 1.0;
+}
+
+@-ms-viewport{
+    width: extend-to-zoom;
+    zoom: 1.0;
+}

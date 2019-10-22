@@ -1,0 +1,95 @@
+﻿::placeholder {
+    color: #888;
+}
+::-webkit-input-placeholder {
+    color: #888;
+}
+
+#dvHeader {
+	display: flex;
+	justify-content: center;
+}
+
+#dvHeader > img {
+  width: 120px;
+  margin-right: 20px;
+}
+
+#dvHeader > span {
+  font-size: 2em;
+  font-weight: 700;
+  color: #666;
+}
+
+.dvLabel {
+	font-size: 1em;
+    font-weight: 600;
+    color: #888;
+    margin-top: 5px;
+    padding-left: 4% !important;
+    text-align: left;
+}
+
+#funcBar1, #funcBar2 {
+	margin-bottom: 30px;
+}
+
+#btnRank {
+	overflow: visible;
+}
+
+#btnRank > span.badge {
+    min-width: 2rem;
+    /*font-size: .8rem;*/
+    font-weight: 600;
+    /*line-height: 30px;*/
+    color: #fff;
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.chart {
+    padding: 0 20px 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px dotted #ddd;
+}
+.chart div {
+  font: 10px sans-serif;
+  background-color: orange;
+  text-align: right;
+  padding: 2px 3px;
+  margin: 1px;
+  color: white;
+}
+
+.modal-content > p >span {
+    font-weight: 500;
+    margin-left: 10px;
+    color: blue;
+}
+
+#round1, #round2, #round3 {
+    margin: 5px 10px;
+    padding: 10px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    #btnRank, #btnSave, #btnDele {
+		width: 60px;
+	}
+}
+
+@viewport{
+    width: extend-to-zoom;
+    zoom: 1.0;
+}
+
+@-ms-viewport{
+    width: extend-to-zoom;
+    zoom: 1.0;
+}
