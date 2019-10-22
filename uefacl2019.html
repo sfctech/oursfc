@@ -1,0 +1,369 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <!--<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />-->
+    <!-- CDN -- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link type="text/css" rel="stylesheet" href="css/uefa-pool.css?_ver=1.0.2" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <title>2019 Champion League</title>
+
+</head>
+
+<body>
+    <div id="container" class="center-align">
+        <div id="dvHeader" class="valign-wrapper">
+            <img src="./img/champions-league-logo2.jpg" />
+            <span>2019 UEFA Champion League</span>
+        </div>
+
+        <div id="dvEntry">
+            <div class="row center-align rowYourEntries" style="width: 100%; padding-bottom: 20px; border-bottom: 1px dotted #ddd">
+                <div class="col s4 dvLabel" style="color: #00897b"><i class="small material-icons">visibility</i>All Entries</div>
+                <div class="col s6 dvSelect">
+                    <select id="sel-entry" class="browser-default"></select>
+                </div>
+                <div class="col s2 dvPoint">
+                    <a id="btnRank" class="waves-effect waves-light btn">
+                        <i class="material-icons left">trending_up</i>Ranking
+                        <span class="badge">0</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col s12 chart"></div>
+
+            <div id="dvChoice">
+                <div class="row center-align" style="width: 100%">
+                    <p>得分如下： 勝-2分, 和-1分, 負-0分, 加時或最後十二碼球勝 - 4分(不包括倍積分和不適用於決賽)。</p>
+                </div>
+                <div class="row center-align rowCat0" style="width: 100%">
+                    <div class="col s4 dvLabel">Rank 1 --> x8</div>
+                    <div class="col s6 dvSelect">
+                        <select id="sel-cat0" class="browser-default">
+                            <option value="">Choice One</option>
+                            <option value="AJ">Ajax</option>
+                            <option value="BA">Barcelona</option>
+                            <option value="JU">Juventus</option>
+                            <option value="LP">Liverpool</option>
+                            <option value="MC">Man. City</option>
+                            <option value="MU">Man. United</option>
+                            <option value="PO">Porto</option>
+                            <option value="TO">Tottenham</option>
+                        </select>
+                    </div>
+                    <div class="col s2 dvPoint">
+                        <input value="0" id="cat0Point" type="text" readonly style="text-align: center">
+                    </div>
+                </div>
+
+                <div class="row center-align rowCat1" style="width: 100%">
+                    <div class="col s4 dvLabel">Rank 2 --> x7</div>
+                    <div class="col s6 dvSelect">
+                        <select id="sel-cat1" class="browser-default">
+                            <option value="">Choice One</option>
+                            <option value="AJ">Ajax</option>
+                            <option value="BA">Barcelona</option>
+                            <option value="JU">Juventus</option>
+                            <option value="LP">Liverpool</option>
+                            <option value="MC">Man. City</option>
+                            <option value="MU">Man. United</option>
+                            <option value="PO">Porto</option>
+                            <option value="TO">Tottenham</option>
+                        </select>
+                    </div>
+                    <div class="col s2 dvPoint">
+                        <input value="0" id="cat1Point" type="text" readonly style="text-align: center">
+                    </div>
+                </div>
+
+                <div class="row center-align rowCat2" style="width: 100%">
+                    <div class="col s4 dvLabel">Rank 3 --> x6</div>
+                    <div class="col s6 dvSelect">
+                        <select id="sel-cat2" class="browser-default">
+                            <option value="">Choice One</option>
+                            <option value="AJ">Ajax</option>
+                            <option value="BA">Barcelona</option>
+                            <option value="JU">Juventus</option>
+                            <option value="LP">Liverpool</option>
+                            <option value="MC">Man. City</option>
+                            <option value="MU">Man. United</option>
+                            <option value="PO">Porto</option>
+                            <option value="TO">Tottenham</option>
+                        </select>
+                    </div>
+                    <div class="col s2 dvPoint">
+                        <input value="0" id="cat2Point" type="text" readonly style="text-align: center">
+                    </div>
+                </div>
+
+                <div class="row center-align rowCat3" style="width: 100%">
+                    <div class="col s4 dvLabel">Rank 4 --> x5</div>
+                    <div class="col s6 dvSelect">
+                        <select id="sel-cat3" class="browser-default">
+                            <option value="">Choice One</option>
+                            <option value="AJ">Ajax</option>
+                            <option value="BA">Barcelona</option>
+                            <option value="JU">Juventus</option>
+                            <option value="LP">Liverpool</option>
+                            <option value="MC">Man. City</option>
+                            <option value="MU">Man. United</option>
+                            <option value="PO">Porto</option>
+                            <option value="TO">Tottenham</option>
+                        </select>
+                    </div>
+                    <div class="col s2 dvPoint">
+                        <input value="0" id="cat3Point" type="text" readonly style="text-align: center">
+                    </div>
+                </div>
+
+                <div class="row center-align rowCat4" style="width: 100%">
+                    <div class="col s4 dvLabel">Rank 5 --> x4</div>
+                    <div class="col s6 dvSelect">
+                        <select id="sel-cat4" class="browser-default">
+                            <option value="">Choice One</option>
+                            <option value="AJ">Ajax</option>
+                            <option value="BA">Barcelona</option>
+                            <option value="JU">Juventus</option>
+                            <option value="LP">Liverpool</option>
+                            <option value="MC">Man. City</option>
+                            <option value="MU">Man. United</option>
+                            <option value="PO">Porto</option>
+                            <option value="TO">Tottenham</option>
+                        </select>
+                    </div>
+                    <div class="col s2 dvPoint">
+                        <input value="0" id="cat4Point" type="text" readonly style="text-align: center">
+                    </div>
+                </div>
+
+                <div class="row center-align rowCat5" style="width: 100%">
+                    <div class="col s4 dvLabel">Rank 6 --> x3</div>
+                    <div class="col s6 dvSelect">
+                        <select id="sel-cat5" class="browser-default">
+                            <option value="">Choice One</option>
+                            <option value="AJ">Ajax</option>
+                            <option value="BA">Barcelona</option>
+                            <option value="JU">Juventus</option>
+                            <option value="LP">Liverpool</option>
+                            <option value="MC">Man. City</option>
+                            <option value="MU">Man. United</option>
+                            <option value="PO">Porto</option>
+                            <option value="TO">Tottenham</option>
+                        </select>
+                    </div>
+                    <div class="col s2 dvPoint">
+                        <input value="0" id="cat5Point" type="text" readonly style="text-align: center">
+                    </div>
+                </div>
+
+                <div class="row center-align rowCat6" style="width: 100%">
+                    <div class="col s4 dvLabel">Rank 7 --> x2</div>
+                    <div class="col s6 dvSelect">
+                        <select id="sel-cat6" class="browser-default">
+                            <option value="">Choice One</option>
+                            <option value="AJ">Ajax</option>
+                            <option value="BA">Barcelona</option>
+                            <option value="JU">Juventus</option>
+                            <option value="LP">Liverpool</option>
+                            <option value="MC">Man. City</option>
+                            <option value="MU">Man. United</option>
+                            <option value="PO">Porto</option>
+                            <option value="TO">Tottenham</option>
+                        </select>
+                    </div>
+                    <div class="col s2 dvPoint">
+                        <input value="0" id="cat6Point" type="text" readonly style="text-align: center">
+                    </div>
+                </div>
+
+                <div class="row center-align rowCat7" style="width: 100%">
+                    <div class="col s4 dvLabel">Rank 8</div>
+                    <div class="col s6 dvSelect">
+                        <select id="sel-cat7" class="browser-default">
+                            <option value="">Choice One</option>
+                            <option value="AJ">Ajax</option>
+                            <option value="BA">Barcelona</option>
+                            <option value="JU">Juventus</option>
+                            <option value="LP">Liverpool</option>
+                            <option value="MC">Man. City</option>
+                            <option value="MU">Man. United</option>
+                            <option value="PO">Porto</option>
+                            <option value="TO">Tottenham</option>
+                        </select>
+                    </div>
+                    <div class="col s2 dvPoint">
+                        <input value="0" id="cat7Point" type="text" readonly style="text-align: center">
+                    </div>
+                </div>
+
+                <div class="row center-align rowCat8" style="width: 100%">
+                    <div class="col s4 dvLabel">Arsenal</div>
+                    <div class="col s6 dvSelect">
+                        <select id="sel-cat8" class="browser-default">
+                            <option value="">Choice One</option>
+                            <option value="C1">Champion</option>
+                            <option value="C2">Final 2</option>
+                            <option value="C3">Final 4</option>
+                            <option value="C4">8 teams</option>
+                        </select>
+                    </div>
+                    <div class="col s2 dvPoint">
+                        <input value="0" id="cat8Point" type="text" readonly style="text-align: center">
+                    </div>
+                </div>
+
+                <div class="row center-align rowCat9" style="width: 100%">
+                    <div class="col s4 dvLabel">Chelsea</div>
+                    <div class="col s6 dvSelect">
+                        <select id="sel-cat9" class="browser-default">
+                            <option value="">Choice One</option>
+                            <option value="C1">Champion</option>
+                            <option value="C2">Final 2</option>
+                            <option value="C3">Final 4</option>
+                            <option value="C4">8 teams</option>
+                        </select>
+                    </div>
+                    <div class="col s2 dvPoint">
+                        <input value="0" id="cat9Point" type="text" readonly style="text-align: center">
+                    </div>
+                </div>
+
+                <div class="row center-align rowTotal" style="width: 100%; padding-bottom: 20px; border-bottom: 1px dotted #ddd">
+                    <div class="col s4 dvLabel"><i class="small material-icons">stars</i></div>
+                    <div class="col s6 dvLabel">Total</div>
+                    <div class="col s2 dvPoint">
+                        <input value="0" id="totalPoint" type="text" readonly style="text-align: center">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--<div id="funcBar1" style="display: none">
+            <a id="btnCalc" class="waves-effect waves-light btn-large"><i class="material-icons left">done</i>Shoot</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a id="btnReset" class="waves-effect waves-light btn-large"><i class="material-icons left">reply</i>Reset</a>
+        </div>-->
+
+        <div id="funcBar2" style="display: none">
+            <div class="row center-align" style="width: 100%">
+                <div class="col s2">
+                    <a id="btnSave" data-target="modalSubmit" class="waves-effect waves-light btn modal-trigger" style="margin-right: 20px"><i class="material-icons left">add_shopping_cart</i>Submit</a>
+                </div>
+                <div class="col s10">
+                    <input value="" id="inputEntryName" type="text" placeholder="Player's name:  <first name><#>">
+                </div>
+                <!--<div class="col s2">
+                    <a id="btnDele" class="waves-effect waves-light btn"><i class="material-icons left">delete</i>Remove</a>
+                </div>
+                <div class="col s2">
+                    <a id="btnReset" class="waves-effect waves-light btn"><i class="material-icons left">reply</i>Reset</a>
+                </div>-->
+            </div>
+        </div>
+
+        <div id="copyright" class="row" style="display: inline-flex; background-color: skyblue; color: #fff; width: 96%; padding: 10px; font-weight: 600;">
+            <div class="col s6" style="margin-left: -10px">
+                <span style="float: left">&copy;2019 Super Friends Club</span>
+            </div>
+            <div class="col s6" style="margin-right: -10px">
+                <span style="float:right; display:inline-block">Support:&nbsp; <a href="mailto:sfctech2015@gmail.com" style="color: #f0f0f0">sfctech2015@gmail.com</a></span>
+            </div>
+        </div>
+
+        <div id="diagram">
+            <div class="row center-align" style="width: 100%; padding: 0 20px 10px 20px">
+                <img src="./img/roadToMadrid2019_2.jpg" style="width: 100%; max-height: 720px; max-width: 720px" />
+            </div>
+        </div>
+    </div> <!-- End of container -->
+
+    <div id="ruleSection" style="padding: 5px 10px">
+        <h4>2019 UEFA Champions League Pool Rules Summary (规则摘要) <button id="btnRule" type="button" class="btn btn-primary">Close(关闭)</button></h4>
+
+        <div id="ruleContent" style="display: block">
+            <p>1) Rank the 8 playoff teams according to your estimate of their (descending) order of finish. </p>
+            <p>2) Rank your winner 1st, 2nd, 3rd and 4th ... etc. Your first-ranked team receives 8x2 points for each win, 8 for a draw in a 90mins game, additional 4 points if win in OT/penalty (not apply in the final game). Second-ranked team 7x2 points for each win and 7 for a draw in a 90mins game, additional 4 points if win in OT/penalty (not apply in the final game). Points for each win ... eight-ranked team - 1x2 point for each win. 1 for draw in a 90mins game, additional 4 points if win in OT/penalty (not apply in the final game). There will be 10 bonus points for correctly ranking the UEFA winner (ranked first). Another 10 bonus points each for correctly ranking Arsenal/Chelsea playing in UEFA Europa League. $5 per entry, maximum 4 entries. </p>
+            <p>3) Please pass on to interested parties. Make payment to Albert Li. Etransfer is also accepted <b>(email: lialbert298@gmail.com)</b>. Your picks must be in no later than 2:00pm April 9. 1st game starts on April 9th  till June 3rd.</p>
+            <p>4) Prizes:
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;If <25 play, 1st wins 100% prize of the pool; last place finisher gets back $5 from the first place prize money. </p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;If 25/+ play, will create a 2nd prize, 1st wins 70% prize of the pool; 2nd wins 30%; last place finisher gets back $5 from the first place prize money. </p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;If 35/+ play, there will be a 3rd prize, 1st wins 60% prize of the pool; 2nd wins 30%; 3rd wins 10%; last place finisher gets back $5 from the first place prize money. </p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;“Ties Split” Rule applies. If 2 players tie for a given prize, they split that prize and the next (lower) prize combined.</p>
+            <!--<br />-->
+            <p><b>2019 歐聯估估赢大錢</b>，参加注意事項。</p>
+            <p>1) 順序由最高起，列出八隊的排名位置</p>
+            <p>2) 得分如下： 勝-2分, 和-1分, 負-0分, 加時或最後十二碼球勝 - 4分(不包括倍積分和不適用於決賽)。最高排名隊得8倍積分，第二高排名得7倍。如是者往下推。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;估中冠軍隊，奖十分。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;估中阿仙奴隊於歐联賽最後排名位置, 奖十分。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;估中車路士隊於歐联賽最後排名位置, 奖十分。</p>
+            <p>3) 有興趣参加者，請將你的選擇，於四月九日下午2点前提交，付款給拔哥。可以etransfer, <b>email: liabert298@gmail.com</b></p>
+            <p>4) 每注$5, 最多可下4注</p>
+            <p>5) 彩金分配如下：</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;若少過25注，則第一名獲100％彩池獎金; 包尾者取回本金，由第一名彩金扣出。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;25注到35注之間，会設有二奖, 則第一名獲70％彩池獎金; 第二名獲30％。包尾者取回本金，由第一名彩金扣出。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;若多過35注，会設有三奖, 第一名獲得60％彩池獎金;第二名獲30％;第三名獲10％。包尾者取回本金，由第一名彩金扣出。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;平分勝出，則平均分配得奖位置及其順序之彩金</p>
+        </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="modalSubmit" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h5 style="color: blueviolet">Your Entry</h5>
+
+            <p>Your Rank1: <span id="yr1"></span></p>
+            <p>Your Rank2: <span id="yr2"></span></p>
+            <p>Your Rank3: <span id="yr3"></span></p>
+            <p>Your Rank4: <span id="yr4"></span></p>
+            <p>Your Rank5: <span id="yr5"></span></p>
+            <p>Your Rank6: <span id="yr6"></span></p>
+            <p>Your Rank7: <span id="yr7"></span></p>
+            <p>Your Rank8: <span id="yr8"></span></p>
+            <p>Arsenal: <span id="yr9"></span></p>
+            <p>Chelsea: <span id="yra"></span></p>
+
+        </div>
+        <div class="modal-footer">
+            <a href="#!" id="btnConfirm" class="modal-close waves-effect waves-green btn">Confirm</a>
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancel</a>
+        </div>
+    </div>
+
+    <!-- Default Statcounter code for SFC Club Website https://oursfc.herokuapp.com/2019clpool -->
+    <script type="text/javascript">
+        var sc_project = 11740733;
+        var sc_invisible = 1;
+        var sc_security = "9dd208d9";
+    </script>
+    <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+    <noscript><div class="statcounter"><a title="Web Analytics Made Easy - StatCounter" href="http://statcounter.com/" target="_blank"><img class="statcounter" src="//c.statcounter.com/11740733/0/9dd208d9/1/" alt="Web Analytics Made Easy - StatCounter"></a></div></noscript>
+    <!-- End of Statcounter Code -->
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+    <!--<script type="text/javascript" src="js/materialize.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/log4javascript.min.js"></script>
+    <script type="text/javascript" src="js/uefa-pool.js?_ver=1.0.2"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137598355-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-137598355-1');
+    </script>
+
+</body>
+</html>

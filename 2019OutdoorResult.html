@@ -1,0 +1,1556 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2019 Summer Outdoor Friday Matches Result</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <style>
+        .content {
+            font-size: 1.5em;
+        }
+
+        .card {
+            margin-bottom: 10px;
+        }
+
+        .card-header {
+            display: flex;
+            width: 100%;
+        }
+
+        .row {
+            display: inline-flex;
+            width: 100%;
+            text-align: center;
+        }
+
+        .row-expblock {
+            float: left; 
+            margin-top: -5px;
+        }
+
+        .team-cell {
+            width: 44.8%;
+            font-size: 1.5em;
+            font-weight: 700;
+        }
+
+        .team-white {
+            color: #c0c0c0;
+        }
+
+        .team-red {
+            color: #ff0000;
+        }
+
+        .team-blue {
+            color: #0000ff;
+        }
+
+        .mid-cell {
+            width: 10%;
+            font-weight: 700;
+            color: darkslateblue;
+        }
+
+        .sp-ref {
+            color: #666;
+            font-weight: 500;
+        }
+
+        .flex-baseline {
+            align-items: baseline;
+        }
+
+        .flex-center {
+            align-items: center;
+        }
+
+        .row-foot {
+            text-align: left;
+            padding: 10px;
+            color: rgba(0,0,0,.54);
+            font-size: .9em;
+            font-weight: 500;
+        }
+
+        .row-foot-roster {
+            display: flex; 
+            border-top: 1px dotted #e0e0e0;
+        }
+
+        .row-foot span {
+            margin: 0 10px;
+            display: inline-block;
+            position: relative;
+        }
+
+        .row-foot span > .badge {
+            width: 12px;
+            height: 12px;
+            display: inline-flex;
+            line-height: 12px;
+            padding-left: 3px;
+            font-size: .6em;
+            font-weight: 700;
+            background-color: #a0a0a0;
+            border-radius: 50%;
+            margin: 0;
+            position: absolute;
+            color: #fff;
+        }
+
+        .row-foot span > .badge-og {
+            width: 12px;
+            height: 12px;
+            display: inline-flex;
+            line-height: 12px;
+            padding-left: 3px;
+            font-size: .6em;
+            font-weight: 700;
+            background-color: red;
+            border-radius: 50%;
+            margin: 0;
+            position: absolute;
+            color: #fff;
+        }
+
+        .roster {
+            display: inline-block;
+            line-height: 25px;
+            padding: 5px 5px;
+            font-size: 1em;
+        }
+
+        .roster-red {
+            background-color: red;
+            color: #fff;
+        }
+
+        .roster-blue {
+            background-color: #010178;
+            color: #fff;
+        }
+
+        .roster-white {
+            color: #444;
+        }
+
+        .expblock {
+	        position: relative;
+	        z-index: 3;
+	        margin: 10px auto;
+            width: 40px;
+            height: 40px;
+            background-color: #01579B;
+            border-radius: 50%;
+            box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16), 0px 0px 0px 1px rgba(0,0,0,0.08), inset 0px 0px 0px 0px rgba(0,0,0,0.1), inset 0px 0px 0px 0px rgba(255,255,255,0.5);
+        }
+        .expblock:hover {
+	        cursor: pointer;
+        }
+
+        .expand-down {
+		    position: relative;
+            display: inline-block;
+            fill: currentColor;
+            height: 24px;
+            line-height: 24px;
+            width: 24px;
+            color: #fff;
+        }
+
+        .expand-down svg {
+            display: block;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-15%);
+        }
+
+        .card-footer {
+            display: none; 
+            width: 100%;
+        }
+
+        .color-goalie {
+            color: darkturquoise;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="section" style="padding: 1em 1.5em">
+        <div class="navbar-item" style="margin-bottom: 15px; padding-left: 0;">
+            <a class="button is-primary is-small is-outlined" href="/stat2019Outdoor">2019 Summer Outdoor Friday Games Statistic</a>
+        </div>
+
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half">
+                    <div class="card" id="card-16">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                <img src="img/sfc-logo-32.jpg" />&nbsp;&nbsp;
+                                <span>Game 16</span>
+                            </p>
+                            <a href="" class="card-header-icon" aria-label="more options" onclick="return false">
+                                <span class="sp-ref">
+                                    ref:&nbsp;
+                                </span>
+                                <img src="img/tomato-24.png" />
+                                &nbsp;&nbsp;&nbsp;
+                                <span>
+                                    <!--<i class="fas fa-angle-down" aria-hidden="true"></i>-->
+                                    <time datetime="2019-09-13">13 Sep 2019</time>
+                                </span>
+                            </a>
+                        </header>
+
+                        <div class="card-content">
+                            <div class="row flex-baseline">
+                                <div class="team-cell team-white">Kenny</div>
+                                <div class="mid-cell">vs</div>
+                                <div class="team-cell team-blue">Dennis</div>
+                            </div>
+                            <div class="row flex-center">
+                                <div class="team-cell team-white">2</div>
+                                <div class="mid-cell">:</div>
+                                <div class="team-cell team-blue">3</div>
+                            </div>
+                            <div class="row row-expblock">
+                                <div class="expblock" data-index="16">
+                                    <span class="expand-down">
+                                        <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <footer class="card-footer">
+                            <div class="row-foot">
+                                昨日的比賽並無因為季尾影響質量，11x11的比賽過程緊湊，比分膠著。這裡要首先多謝两位杖義幫忙同時也表現出色的4G龍門Jam Joe 和HK Kim。<br>比賽初段，雙方人腳未齊，藍隊佔一定優勢，在大片的空間上，丹尼仔和阿平經常在两側發動攻勢。在一次攻勢中阿平右側傳到左侧丹尼仔挑入中路，光頭安輕易射入，1：0 藍隊领前上半場。<br>下半場白隊以突擊打法應付，打法簡單而有效，在十分鐘內完成反超：白隊前鋒Matt 成功接應比利馮傳中扳平比分，城城成功反越位突破藍隊防線單刀得手，白隊2:1。<br>藍隊見勢不妙，全力反撲，阿輝移中和西門玲合作，控制中場。阿平接應光頭安左路橫傳，單獨面向龍門，輕鬆破網2:2追平。及後，光頭安接應順哥右路一個45度傳球，在Jam Joe 出迎前搶點，補射成3比2。藍隊反超。<br>餘下時間，雖然落後，白隊並無氣餒，也獲得不少良機，但都逃不過HK Kim的十指關。最終比分藍隊3:2贏得本賽季週五最後一場賽事。<br>在此多謝幕後SFC Admin安排比賽名單方面作出的努力，以令每場比賽在相對公平地進行。另外，球會季後的派對也在計劃當中, 具體安排會作公佈，請各位留意。<br>
+                            </div>
+                            <div class="row-foot row-foot-roster">
+                                <div class="roster roster-white">
+                                    <span>$6</span>
+                                    <span>BB</span>
+                                    <span>BillyF</span>
+                                    <span>Dicky<span class="badge">1</span></span>
+                                    <span>Kenny</span>
+                                    <span>Gary</span>
+                                    <span>Henry</span>
+                                    <span class="color-goalie">Joe</span>
+                                    <span>Kevin</span>
+                                    <span>SRay</span>
+                                    <span>Matt<span class="badge">1</span></span>
+                                </div>
+                                <div class="roster roster-blue">
+                                    <span>Albert</span>
+                                    <span>Dennis</span>
+                                    <span>Elkin</span>
+                                    <span>Hansen</span>
+                                    <span class="color-goalie">Kim</span>
+                                    <span>Paul</span>
+                                    <span>Ping<span class="badge">1</span></span>
+                                    <span>Shun</span>
+                                    <span>SLing</span>
+                                    <span>Fai</span>
+                                    <span>On<span class="badge">2</span></span>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+
+                <div class="column is-half">
+                    <div class="card" id="card-15">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                <img src="img/sfc-logo-32.jpg" />&nbsp;&nbsp;
+                                <span>Game 15</span>
+                            </p>
+                            <a href="" class="card-header-icon" aria-label="more options" onclick="return false">
+                                <span class="sp-ref">
+                                    ref:&nbsp;
+                                </span>
+                                <img src="img/tomato-24.png" />
+                                &nbsp;&nbsp;&nbsp;
+                                <span>
+                                    <!--<i class="fas fa-angle-down" aria-hidden="true"></i>-->
+                                    <time datetime="2019-09-06">06 Sep 2019</time>
+                                </span>
+                            </a>
+                        </header>
+
+                        <div class="card-content">
+                            <div class="row flex-baseline">
+                                <div class="team-cell team-white">Karson</div>
+                                <div class="mid-cell">vs</div>
+                                <div class="team-cell team-blue">BillyC</div>
+                            </div>
+                            <div class="row flex-center">
+                                <div class="team-cell team-white">2</div>
+                                <div class="mid-cell">:</div>
+                                <div class="team-cell team-blue">5</div>
+                            </div>
+                            <div class="row row-expblock">
+                                <div class="expblock" data-index="15">
+                                    <span class="expand-down">
+                                        <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <footer class="card-footer">
+                            <div class="row-foot">
+                                Speed, speed and speed. That sums up goals scored by Blue team tonight. Final result is 5:2 favouring Blue team but it could be a lot closer if half of the 4 bar hitting shot by White found the net instead. Without question, Blue's tactic was simple and effective. Fully utilized the speed of the 3 forwards and got a commanding lead early and throughout the match. Ping and Shing Shing were outstanding together. They were like couple made in heaven that always able to find each other at the offensive side. White's counter attacks were sound but unfortunately, lack of luck. On Gor tried his best by scoring twice to keep the margin close. With some luck, he could have hat trick and more. As the field gets dark sooner week by week, let's try starting the game as early as possible so that we can squeeze a few more playing minutes.<br>
+                                速度，速度和速度！<br>這總結了今晚藍隊的取勝之道。最終結果就是藍隊5：2取勝，但如果白隊不是欠缺運氣多達四次擊中橫梁的話，比分絕對可能是較近的比分甚至平局。毫無疑問，藍隊的比賽策略簡單而有效：充分利用3名前鋒的速度，並在比賽早段已經獲得領先優勢。藍隊的平平和城城這場比賽在一起表現出色，合作無間，「有如上天製作的一對情侶，總能在進攻端找到對方」....而白隊的防守反擊戰術也是合理的思路，但不幸的是，運氣沒有站在他們這邊。安哥已經盡了力兩次攻破對方龍門，假若運氣更好，他有機會實現帽子戲法。<br>進入九月份，日照時間逐週減少，希望我們在剩下來的比賽儘早開始，這樣大家可以享受盡可能多的夏日室外足球。
+                            </div>
+                            <div class="row-foot row-foot-roster">
+                                <div class="roster roster-white">
+                                    <span>Alan</span>
+                                    <span class="color-goalie">$6</span>
+                                    <span>BillyF</span>
+                                    <span class="color-goalie">Henry</span>
+                                    <span>Kenny</span>
+                                    <span>Kit</span>
+                                    <span class="color-goalie">Karson</span>
+                                    <span class="color-goalie">Gary</span>
+                                    <span>Paul</span>
+                                    <span>BRay</span>
+                                    <span>TT</span>
+                                    <span>On<span class="badge">2</span></span>
+                                </div>
+                                <div class="roster roster-blue">
+                                    <span>BillyC</span>
+                                    <span>Jeff</span>
+                                    <span>Matt<span class="badge">1</span></span>
+                                    <span>Dicky<span class="badge">2</span></span>
+                                    <span class="color-goalie">Elkin</span>
+                                    <span class="color-goalie">Kevin</span>
+                                    <span>SRay</span>
+                                    <span>Ronald</span>
+                                    <span>Fai</span>
+                                    <span>SLing<span class="badge">1</span></span>
+                                    <span class="color-goalie">SLeung<span class="badge">1</span></span>
+                                    <span>Ping</span>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="column is-half">
+                    <div class="card" id="card-14">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                <img src="img/sfc-logo-32.jpg" />&nbsp;&nbsp;
+                                <span>Game 14</span>
+                            </p>
+                            <a href="" class="card-header-icon" aria-label="more options" onclick="return false">
+                                <span class="sp-ref">
+                                    ref:&nbsp;
+                                </span>
+                                <img src="img/tomato-24.png" />
+                                &nbsp;&nbsp;&nbsp;
+                                <span>
+                                    <!--<i class="fas fa-angle-down" aria-hidden="true"></i>-->
+                                    <time datetime="2019-08-16">16 Aug 2019</time>
+                                </span>
+                            </a>
+                        </header>
+
+                        <div class="card-content">
+                            <div class="row flex-baseline">
+                                <div class="team-cell team-white">Albert</div>
+                                <div class="mid-cell">vs</div>
+                                <div class="team-cell team-blue">Elkin</div>
+                            </div>
+                            <div class="row flex-center">
+                                <div class="team-cell team-white">2</div>
+                                <div class="mid-cell">:</div>
+                                <div class="team-cell team-blue">3</div>
+                            </div>
+                            <div class="row row-expblock">
+                                <div class="expblock" data-index="14">
+                                    <span class="expand-down">
+                                        <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <footer class="card-footer">
+                            <div class="row-foot">
+                                一場看似一面倒的賽事,，控球在腳的白隊似有些優勢，但藍隊在阿勤隊長帶領下，全隊每人走多一步，白隊佔不到太多甜頭。<br>白隊上半場有两次黃金機會：大佬杰一次禁區邊放冷箭，中柱弹出，另外Matt 妙傳入十二碼?，師傅「冷靜」地射失。而藍隊阿平也有一次不錯的射門機會，可惜被大威救出。零比零是上半場的紀錄。<br>易邊後，藍隊穩守突擊戰術開始生效，先得一角球，球落在Ronno腳下，在無人看管下從容射入。之後一次反擊下, 輝sir 單刀得手。藍隊2:0领先。至此，白隊如夢初醒，狂攻下由超人倫射成接近比數。但是當白隊乘勝追擊空巢而出下，高位防守，又被藍隊成功反擊TT斬入過頭傳中由阿平輕鬆射入空門，比分變成3比1。之後白隊由細威交一直線入禁區，安哥射入成2比3。但畢竟時間有限，最終藍隊蠃了比賽。<br>這場比賽再次證明牌面的優勢往往不是確定結果的主導因素：賽前準備，戰術執行，團隊精神，以及運氣往往更直接影響結果。希望每一位SFC隊友繼續享受週五比賽過程！<br>
+                                When the roster came out, it was seen as a one-sided game with White team being the favourite.. but as game carried out, Blue team was the better team, led by Captain Elkin and all hard-working team members.<br>In the first half, White team got two big chances: Kit Gor had a good shot but hit the post, and then Matt passed the ball to the 12-yard box where Kenny was in front of the goal, but he calmly missed the shot! On the Blue side, the forward Ping Ping had a shot but blocked by Big Ray. 0:0 was the score line at half time. <br>As second half started, the Blue team's counter-attack tactics started to work, they first got a corner kick, the loose ball fell in front of Ronno , his shot got Blue 1:0; not very long after, with a mistake by the White team’s defense player, Fai Gor got a 1x1 to White team’s goalie, 2:0 lead! With 2 goal down, White team started to realize the critical situation, and started to attack back. Superman got one back. 2:1. But as the White team was just focusing on the offense, their defense line was so high, very quickly it was exposed to another counter attack by Blue: TT easily got into the back line of White team and sent the ball to Ping Ping, an really easy tap-in, 3:1. In the remaining time, White team got another goal to reduce the gap, 3:2. But with limited time, Blue team finally won the game.<br>This is another good example that the team with better captaincy, better game plan, better team spirit got the result. The roster line up isn’t everything. Enjoy the play!
+                            </div>
+                            <div class="row-foot row-foot-roster">
+                                <div class="roster roster-white">
+                                    <span>Alan<span class="badge">1</span></span>
+                                    <span>Albert</span>
+                                    <span class="color-goalie">BillyC</span>
+                                    <span class="color-goalie">BRay</span>
+                                    <span>Kit</span>
+                                    <span>Henry</span>
+                                    <span>Kenny</span>
+                                    <span>Kevin</span>
+                                    <span>Paul</span>
+                                    <span>Matt</span>
+                                    <span class="color-goalie">SRay</span>
+                                    <span class="color-goalie">On<span class="badge">1</span></span>
+                                </div>
+                                <div class="roster roster-blue">
+                                    <span>Dennis</span>
+                                    <span>BillyF</span>
+                                    <span class="color-goalie">Dicky</span>
+                                    <span>Elkin</span>
+                                    <span>Gary</span>
+                                    <span class="color-goalie">Jeff</span>
+                                    <span>Kam</span>
+                                    <span>Kim</span>
+                                    <span class="color-goalie">TT</span>
+                                    <span>Fai<span class="badge">1</span></span>
+                                    <span>Ping<span class="badge">1</span></span>
+                                    <span class="color-goalie">Ronno<span class="badge">1</span></span>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+
+                <div class="column is-half">
+                    <div class="card" id="card-13">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                <img src="img/sfc-logo-32.jpg" />&nbsp;&nbsp;
+                                <span>Game 13</span>
+                            </p>
+                            <a href="" class="card-header-icon" aria-label="more options" onclick="return false">
+                                <span class="sp-ref">
+                                    ref:&nbsp;
+                                </span>
+                                <img src="img/tomato-24.png" />
+                                &nbsp;&nbsp;&nbsp;
+                                <span>
+                                    <!--<i class="fas fa-angle-down" aria-hidden="true"></i>-->
+                                    <time datetime="2019-08-09">09 Aug 2019</time>
+                                </span>
+                            </a>
+                        </header>
+
+                        <div class="card-content">
+                            <div class="row flex-baseline">
+                                <div class="team-cell team-white">Fai</div>
+                                <div class="mid-cell">vs</div>
+                                <div class="team-cell team-blue">KK</div>
+                            </div>
+                            <div class="row flex-center">
+                                <div class="team-cell team-white">3</div>
+                                <div class="mid-cell">:</div>
+                                <div class="team-cell team-blue">2</div>
+                            </div>
+                            <div class="row row-expblock">
+                                <div class="expblock" data-index="13">
+                                    <span class="expand-down">
+                                        <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <footer class="card-footer">
+                            <div class="row-foot">
+                                蓝队与白队纸面实力，让人想到英超热刺与曼城，只是队服颜色对调一下。纵然蓝队让人看低一点，但回想到曼城还是输掉注定要输的，赢下必须要赢的，作为一场赛季的常规\“联赛\”，蓝队还是没能做出逆袭，所以比赛的结局也就不言而喻。<br>比赛的过程依然充满戏剧性。蓝队有个闪亮的开局，白队Paul仔在本方禁区里的一次礼让，蓝队先锋城城笑纳大礼，一蹴而就，首开纪录。先礼后兵的白队，进攻的欲望一挞即着。白队急先锋Jeff一次反越位的冷静施射与一次在大禁区角包夹下仓猝起脚，效果都是一样的，球妥妥的落入蓝队网中，白队实现反超2:1。<br>易边再战，蓝队由Kit哥出任中场指挥，Kevin与大威在中后场全力拦截并实施组织，城城在前冲锋陷阵，令局面上与白队形成制约。无奈在白队的一次发角球机会时，白队中场TT摆开架势，一脚神来之笔，发出一记仙球，飘至蓝方球门远门柱，直接击柱弹入，惊艳全场。而蓝队城城在错失几次入球机会后，终于较正了射门鞋的准星，在一次绝佳的单刀机会中为蓝队追回一球。但此时留给蓝队追平的时间已经不多了，白队也凭借稍胜一筹的传控把比赛时间耗尽，守住3:2的胜局。<br>本场白队的Jeff与蓝队的城城各自梅开二度，而城城更是以累计10个入球数，暂时笑傲射手榜。<br>
+                                By just looking at the line up on the roster on the Blue and White, people might think of the Premier League Tottenham and Manchester City, just this time White is the \“Man City\”. Let’s look at what happened.<br>The 90 minutes of game time isn’t without drama. The Blue team indeed had a wonderful start: a “chance” given by Paul from White team in the penalty area, Blue Team forward Shing Shing happily took it and opened the record. Quickly, White team lined up with stronger attacking side to respond: for two times, Jeff opened the score by one anti-offside tactic and an open shot from the border line of penalty box, it didn’t take much time for White team to reversed the score, and they led by 2:1.<br>After half time, Blue team has Kit come back to the midfield, with Kevin and Big-Ray forming a strong defense, they intercepted the ball and organized from the backline to the front, and Shing Shing is the one that is in charge of the attacking line – trying to counter the stronger White side . Helpless in the White team's corner kick opportunity, the White team midfielder TT got a world class corner with the ball drifted to the far post of the goal, it certainly stunned the audience.<br>On the other side, Blue team missed a few good chances, but they finally it is Shing Shing again got one back for Blue. However, there was minimum time left for the Blue do anything more. White Team switched to ball-control strategy to exhaust the game time and hold the 3:2 victory.<br>The White team's Jeff and the Blue team's Shing Shing each scored twice in this game. Shing Shing has more than 10 goals, and currently leading the golder boot race.
+                            </div>
+                            <div class="row-foot row-foot-roster">
+                                <div class="roster roster-white">
+                                    <span class="color-goalie">Alan</span>
+                                    <span>Albert</span>
+                                    <span class="color-goalie">BillyF</span>
+                                    <span>Henry</span>
+                                    <span class="color-goalie">Hansen</span>
+                                    <span>Jeff<span class="badge">2</span></span>
+                                    <span>Paul</span>
+                                    <span>SRay</span>
+                                    <span>Kim</span>
+                                    <span class="color-goalie">Sam</span>
+                                    <span>TT<span class="badge">1</span></span>
+                                    <span>Fai</span>
+                                </div>
+                                <div class="roster roster-blue">
+                                    <span>BillyC</span>
+                                    <span>BRay</span>
+                                    <span class="color-goalie">Dennis</span>
+                                    <span>Dicky<span class="badge">2</span></span>
+                                    <span>Elkin</span>
+                                    <span class="color-goalie">Kit</span>
+                                    <span>Kevin</span>
+                                    <span>Gary</span>
+                                    <span>KK</span>
+                                    <span>Kenny</span>
+                                    <span class="color-goalie">Ping</span>
+                                    <span>Ronno</span>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="column is-half">
+                    <div class="card" id="card-12">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                <img src="img/sfc-logo-32.jpg" />&nbsp;&nbsp;
+                                <span>Game 12</span>
+                            </p>
+                            <a href="" class="card-header-icon" aria-label="more options" onclick="return false">
+                                <span class="sp-ref">
+                                    ref:&nbsp;
+                                </span>
+                                <img src="img/tomato-24.png" />
+                                &nbsp;&nbsp;&nbsp;
+                                <span>
+                                    <!--<i class="fas fa-angle-down" aria-hidden="true"></i>-->
+                                    <time datetime="2019-08-02">02 Aug 2019</time>
+                                </span>
+                            </a>
+                        </header>
+
+                        <div class="card-content">
+                            <div class="row flex-baseline">
+                                <div class="team-cell team-white">Paul</div>
+                                <div class="mid-cell">vs</div>
+                                <div class="team-cell team-blue">BRay</div>
+                            </div>
+                            <div class="row flex-center">
+                                <div class="team-cell team-white">1</div>
+                                <div class="mid-cell">:</div>
+                                <div class="team-cell team-blue">6</div>
+                            </div>
+                            <div class="row row-expblock">
+                                <div class="expblock" data-index="12">
+                                    <span class="expand-down">
+                                        <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <footer class="card-footer">
+                            <div class="row-foot">
+                                The first goal scored by Paul was a beauty. A 30+ yards shot caught the upper corner of the goal. As always, the 5'4\" goalie helplessly watched it went in. Quality goals continued to come and this time, they were all from the Blue team. The high pressure applied by Blue players rewarded them the next 6 unanswered goals, 4 by On and 2 by Superman. The winning goal from Superman was as amazing as the one he scored couple weeks ago (I was told). This time he scored with his left foot and curved the ball into the lower part of the right pole. On also scored one only he can do it so effortlessly. With almost zero angle, he flipped the ball into the net with the upper part of his right foot. A showcase of his ball control, touch and skills. Another star of the match is shing shing. He assisted 4 times and they were all results of his rentless efforts. The final result may be one sided but the match was played fairly evenly.<br>
+                                队长Paul打進的第一個進球是一個美妙的入球：一次30碼以上的远射命中球門的上角，毫无疑问，对這位5尺4寸的守門員而言是無助的一刻，只能原地看著足球入网。<br>之后的比赛开始进入高潮，入球数量和質量都在持续，不过得分都属于藍隊。藍隊队员施加的高壓給他們帶來了接下來的连续6個進球：超人的反超比分的入球和他幾週前的绝杀的精彩入球一樣令人拍案（我没有参加那场比赛不过坊间传得很盛），這次他用左腳低射以弧线绕入白队球门的右下角。而安哥的入球就如一个宣言：这样入球在队中只有他可以毫不費力地做到。幾乎沒有角度，一记右腳灵巧地把球轻轻吊入網内，完全是控球、觸球和技巧的表演。<br>这场比賽的另一个明星级表现的球员当属蓝队的城城，这场球他助攻了4次，完全就是無私努力的結果。<br>比赛的最终結果看上去是單方面的，但其实比賽过程则是相當均匀的，蓝白双方都有不少机会，只是蓝队的前场把握更胜一筹。
+                            </div>
+                            <div class="row-foot row-foot-roster">
+                                <div class="roster roster-white">
+                                    <span>BillyF</span>
+                                    <span>Albert</span>
+                                    <span>Henry</span>
+                                    <span class="color-goalie">Elkin</span>
+                                    <span>Jeff</span>
+                                    <span class="color-goalie">Karson</span>
+                                    <span>Ping</span>
+                                    <span>Paul<span class="badge">1</span></span>
+                                    <span>KK</span>
+                                    <span class="color-goalie">Matt</span>
+                                    <span>Ronno</span>
+                                    <span class="color-goalie">Fai</span>
+                                </div>
+                                <div class="roster roster-blue">
+                                    <span>Alan<span class="badge">2</span></span>
+                                    <span class="color-goalie">BillyC</span>
+                                    <span>Dicky</span>
+                                    <span class="color-goalie">$6</span>
+                                    <span class="color-goalie">Gary</span>
+                                    <span>Kevin</span>
+                                    <span>BRay</span>
+                                    <span>SRay</span>
+                                    <span>Kenny</span>
+                                    <span>Sam</span>
+                                    <span class="color-goalie">SLing</span>
+                                    <span>On<span class="badge">4</span></span>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+
+                <div class="column is-half">
+                    <div class="card" id="card-11">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                <img src="img/sfc-logo-32.jpg" />&nbsp;&nbsp;
+                                <span>Game 11</span>
+                            </p>
+                            <a href="" class="card-header-icon" aria-label="more options" onclick="return false">
+                                <span class="sp-ref">
+                                    ref:&nbsp;
+                                </span>
+                                <img src="img/tomato-24.png" />
+                                &nbsp;&nbsp;&nbsp;
+                                <span>
+                                    <!--<i class="fas fa-angle-down" aria-hidden="true"></i>-->
+                                    <time datetime="2019-07-26">26 July 2019</time>
+                                </span>
+                            </a>
+                        </header>
+
+                        <div class="card-content">
+                            <div class="row flex-baseline">
+                                <div class="team-cell team-white">Dicky</div>
+                                <div class="mid-cell">vs</div>
+                                <div class="team-cell team-blue">Matt</div>
+                            </div>
+                            <div class="row flex-center">
+                                <div class="team-cell team-white">1</div>
+                                <div class="mid-cell">:</div>
+                                <div class="team-cell team-blue">3</div>
+                            </div>
+                            <div class="row row-expblock">
+                                <div class="expblock" data-index="11">
+                                    <span class="expand-down">
+                                        <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <footer class="card-footer">
+                            <div class="row-foot">
+                                昨晚的比賽也在悶熱情況下進行, 白衣軍隊中陣容強大, 五大天王, 两位炙手可熱射手, 連藍衣軍隊長Matt 赛前呼籲各隊友們多走一步.<br>笛子一响, 藍隊在少两員下相當不妙, 在劣勢下被白隊狂攻. 幸運地抵擋得住, 及後Billy F 和輝sir 趕到, 形勢就均衡些, 在一次突擊中由Billy F 直接傳入底線阿平, 斬中, 輝sir 躍起跳頂入左下角, 漂亮的一個入球, 1：0（遲些有片睇）, 很快白隊由安哥門前混戰中射入, 雙方互有攻守下以1：1完上半場. 下半場白隊依然在優勢下, 每次都畀神勇阿祖化解, 藍隊在一次突擊中, 由Alex 大腳斬入禁區, KK 接球脱手, 阿平輕易射入, 2:1 , 之後也在一次突擊中, 阿平橫傳輝sir 第一時間射入. 白隊Kim 做龍時飛撲救了阿平一個必入球.  3:1 藍隊就以這比數艱苦下勝出這比賽.<br>總括藍隊在隊長Matt 帶领下打出水準以上的表現, MVP 落在阿平和輝sir.<br>
+                                Last night's game was also carried out in a sweltering situation. The white army had a strong lineup, the five kings, two hot-handed shooters, and even the blue army captain Matt called the teammates to take one more step before the game.<br>When the flute rang, the blue team was quite uncomfortable with two fewer players. Under the disadvantage, the blue team was attacked by the white team. Fortunately, it was fortunate to withstand, and then Billy F and Hui sir arrived, the situation was balanced, in a surprise by Billy F directly into the bottom line and ping kicked back to middle, 辉sir jumped and hit the ball by head into the bottom left corner, a beautiful goal, 1:0 (later see the record review), and soon the white team was shot by Angmen in front of the melee, The two sides had each other's offense and defense to finish the first half with 1:1. The second half of the white team is still under the advantage, every time they are brave and brave Azu resolves, the blue team in a surprise attack, Alex kicked into the restricted area, KK touched the ball but not catching, then Ping easily shot, 2:1, and soon in a surprise attack, A Ping cross the ball to Fai Sir first time to shoot. White team Kim made a dragon when it saved Aping a must-goal ball. 3:1 Blue team It’s hard to win this game with a hard time.<br>The overall blue team played under the leadership of Captain Matt, and the MVP fell in Aping and Fai Sir.
+                            </div>
+                            <div class="row-foot row-foot-roster">
+                                <div class="roster roster-white">
+                                    <span>Alan</span>
+                                    <span>BB</span>
+                                    <span>Gary</span>
+                                    <span>Henry</span>
+                                    <span class="color-goalie">Anthony</span>
+                                    <span>Dicky</span>
+                                    <span class="color-goalie">Paul</span>
+                                    <span class="color-goalie">KK</span>
+                                    <span class="color-goalie">Kim</span>
+                                    <span>Sam</span>
+                                    <span>On<span class="badge">1</span></span>
+                                    <span>Hansen</span>
+                                </div>
+                                <div class="roster roster-blue">
+                                    <span>Albert</span>
+                                    <span>AlexLo</span>
+                                    <span>BillyF</span>
+                                    <span>Elkin</span>
+                                    <span>Jeff</span>
+                                    <span>Ping<span class="badge">1</span></span>
+                                    <span>Matt</span>
+                                    <span>SRay</span>
+                                    <span>Ronno</span>
+                                    <span class="color-goalie">Joe</span>
+                                    <span>TT</span>
+                                    <span>Fai<span class="badge">2</span></span>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="column is-half">
+                    <div class="card" id="card-10">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                <img src="img/sfc-logo-32.jpg" />&nbsp;&nbsp;
+                                <span>Game 10</span>
+                            </p>
+                            <a href="" class="card-header-icon" aria-label="more options" onclick="return false">
+                                <span class="sp-ref">
+                                    ref:&nbsp;
+                                </span>
+                                <img src="img/tomato-24.png" />
+                                &nbsp;&nbsp;&nbsp;
+                                <span>
+                                    <!--<i class="fas fa-angle-down" aria-hidden="true"></i>-->
+                                    <time datetime="2019-07-19">19 July 2019</time>
+                                </span>
+                            </a>
+                        </header>
+
+                        <div class="card-content">
+                            <div class="row flex-baseline">
+                                <div class="team-cell team-white">Kit</div>
+                                <div class="mid-cell">vs</div>
+                                <div class="team-cell team-blue">Kevin</div>
+                            </div>
+                            <div class="row flex-center">
+                                <div class="team-cell team-white">3</div>
+                                <div class="mid-cell">:</div>
+                                <div class="team-cell team-blue">3</div>
+                            </div>
+                            <div class="row row-expblock">
+                                <div class="expblock" data-index="10">
+                                    <span class="expand-down">
+                                        <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <footer class="card-footer">
+                            <div class="row-foot">
+                                因为有豪雨预警，比赛转移到可以令我们更专注比赛的场地UHS。豪雨没有出现，但热浪与潮湿依然令我们喘不过气，但依然不能让一场龙争虎斗有所失色。<br>提前报上最终结果3:3，不缺入球不乏精彩，而又一派和谐，以致双方队员赛后在场边津津乐道，交流甚欢，不落于一家欢喜一家愁的局面。<br>开局时，白队以11打10，获益于人数上的便宜，掌握了场上的主动，由白队中场玲玲首开纪录。之后场上人数回复到12x12，瞬间蓝队通过两次偷袭，由城城连下两城，一举反超。中场前，蓝队后场忙中出错，白队正印先锋On哥自然不会错失良机，球不着地一个窝里，球应声落入蓝网，追和。<br>易边再战，各踢一节好球。先是蓝队开始发难，趁着白队悍将Jeff守笼，入球功臣On哥作为lastman，大举压迫白队阵营。凭借一次高质量的进攻，由白队城城边路起球入禁区，急骑Matt心领神会拍马赶到，倚着蓝队中坚磐石On哥，面对出击身手敏捷的Jeff，冷静用头一点，巧妙把球蹭入白网，入球一气呵成。随后好戏归由白队上演，令蓝队门前风声鹤唳，再次忙中连错，先是白队队长Kit哥逼下皮球，由边路传入中路，漏至门前的白队On哥，令On哥入球数喜添一粒。最后一声长哨，皆大欢喜，恭贺白队的On哥和蓝队的城城各表一枝，花开两朵。<br>
+                                Due to the heavy rain forecast, the game was moved to UHS, which is expected to be a better field for good game. In fact, the heavy rain did not come, but the heat and humidity still caused troubles to all players, yet this can’t prevent a good game from happening.<br>As for the results, the final score line was 3:3. There was no lack of enthusiasm for all the goals, and it is a result that is acceptable for both sides. <br>At the start of the game, White team played 11 to 10, benefiting from one extra body, they dominated the field, and White team midfielder Ling Ling opened the record. After the late arrivals returned to the field, both sides played 12x12, Blue team took two quick counter attacks, Shing Shing scored twice and got Blue team the lead. Before the half time, Blue team made a mistake at the back which allowed White team’s prolific forward On Gor to take the opportunity. 2:2 is the half time score line.<br>In the second half, each side played better in one section. First, Blue team started the attack, where White team has Jeff assigned as goalie and On Gor as last man, aggressively oppressed White team. With a high-quality attack from the side, White team Shing Shing put the ball on the box where Matt headed the goal into the net bypassing On Gor and Jeff. In the 4th section, the good play was returned to White team, Blue team was the busier side on the defense line. Another mistake was caught by White team captain Kit Gor grabbed the ball, passed to the side way and finally reflected to the middle where On Gor appeared, and he certainly didn’t disappoint: 3:3. Very soon the final whistle came, everyone was happy. <br>Congratulations to White team's On Gor and Blue team’s Shing Shing, MVP for their teams!
+                            </div>
+                            <div class="row-foot row-foot-roster">
+                                <div class="roster roster-white">
+                                    <span>BB</span>
+                                    <span class="color-goalie">Albert</span>
+                                    <span>Henry</span>
+                                    <span>Gary</span>
+                                    <span class="color-goalie">Jeff</span>
+                                    <span>Kit</span>
+                                    <span>Ping</span>
+                                    <span>Kenny</span>
+                                    <span>SRay</span>
+                                    <span class="color-goalie">On<span class="badge">2</span></span>
+                                    <span class="color-goalie">Ronno</span>
+                                    <span>SLing<span class="badge">1</span></span>
+                                </div>
+                                <div class="roster roster-blue">
+                                    <span class="color-goalie">Alan</span>
+                                    <span class="color-goalie">BillyF</span>
+                                    <span>Dicky<span class="badge">2</span></span>
+                                    <span class="color-goalie">Hansen</span>
+                                    <span class="color-goalie">Kevin</span>
+                                    <span>Kim</span>
+                                    <span>KK</span>
+                                    <span>Matt<span class="badge">1</span></span>
+                                    <span>Paul</span>
+                                    <span>Sam</span>
+                                    <span>Shun</span>
+                                    <span>TT</span>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+
+                <div class="column is-half">
+                    <div class="card" id="card-9">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                <img src="img/sfc-logo-32.jpg" />&nbsp;&nbsp;
+                                <span>Game 9</span>
+                            </p>
+                            <a href="" class="card-header-icon" aria-label="more options" onclick="return false">
+                                <span class="sp-ref">
+                                    ref:&nbsp;
+                                </span>
+                                <img src="img/tomato-24.png" />
+                                &nbsp;&nbsp;&nbsp;
+                                <span>
+                                    <!--<i class="fas fa-angle-down" aria-hidden="true"></i>-->
+                                    <time datetime="2019-07-12">12 July 2019</time>
+                                </span>
+                            </a>
+                        </header>
+
+                        <div class="card-content">
+                            <div class="row flex-baseline">
+                                <div class="team-cell team-white">Albert</div>
+                                <div class="mid-cell">vs</div>
+                                <div class="team-cell team-blue">SRay</div>
+                            </div>
+                            <div class="row flex-center">
+                                <div class="team-cell team-white">3</div>
+                                <div class="mid-cell">:</div>
+                                <div class="team-cell team-blue">4</div>
+                            </div>
+                            <div class="row row-expblock">
+                                <div class="expblock" data-index="9">
+                                    <span class="expand-down">
+                                        <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <footer class="card-footer">
+                            <div class="row-foot">
+                                經歷過上星期被藍隊蹂躪之後，看看陣容好似差不多，白隊就充大個頭以superman和Jeff做雙箭頭，一於打死罷就。<br>開波後白隊的確見效，迫使藍隊主力大威縮後，藍隊只有長傳，白隊就短傳滲入，戰至十分鐘，超人一記鮮有地波勁射，可惜中柱彈出，藍隊一额汗。之後藍隊一記長傳反攻，城城單刀，龍門救到，球卻弹到KK腳下，輕易射入，1：0。之後白隊波仔大腳斬到中邊線交俾順哥，頂交Jeff後上連過數關單刀射入1:1。藍隊型男Matt也得一次單刀中楣。到上半場尾段戰情更加激烈，火花四濺，球証蕃茄需要暫停完上半場。<br>下半場在白隊一次鬆懈，不夠集中，龍門清波不遠球落在藍隊隊長細威腳下，不慌不忙遠斬入空門，2：1。不久輝哥又一次長傳城城，龍門出迎，城城機警腳後跟交後俾迎上的KK，輕鬆下射入，3：1。十分鐘後，又系一次長傳城城，在球未落地射入高水平世界波入遠柱，4：1。其實白隊一路有進攻，但效果平平。白隊決心變改陣容，波仔和Ronno推上，Sam哥和順哥打後，背城借一反攻，得到不少角球死球機會，鬼仔西門两次使出看家本領獅子搖頭，追成4:3緊張局面，可惜時間有限，無法追平，白隊最終一球飲恨。<br>今天我以白隊隊長身份多謝各隊友落力比賽，白隊需敗猶榮。大家也增添了一場難忘比賽。<br>
+                                This week’s line up is similar to last week, with just a big defect lost to the blue, white team decided to put Superman and Jeff as two center forward.<br>With the start, the formation did work, forcing the blue team to shrink, where they only had long passes, and white team can maintain penetration through short passes. The battle lasted for ten minutes, Superman had a good shot but hit the post. Then the blue team had a long pass counterattack, Shing Shing has a 1x1 with goalie, the goalie did a decent job to rescue, but the loose ball got into KK’s way, an easy shot, 1:0. After that, the white team made a long pass and found Shun Gor where he headed to Jeff’s way, and he ran all the way and got a goal was 1:1. By the end of the first half, the battle was more intense, and the sparks were splashed. Referee tomato called into half time break.<br>In the second half, the white team lost a moment of concentration. The white team goalie didn’t clear the ball properly and somehow it got blue team’s captain Small Ray, where he calmly shot to the far corner, 2:1. Soon enough, Fai Gor from white team used long pass to find Shing Shing, where he made a reversed angle pass to KK, and KK scored easily, 3:1. Ten minutes later, it was another long-range that found Shing Shing, the wide attacker found the net via the far corner, 4:1.  Then the White Team is determined to change the lineup. Paul and Ronno were pushed up, and got lots of corners or free kicks. Simon Ling didn’t disappoint by twice getting goals via headers, the score line was changed to 4:3, so close…  but unfortunately time is limited, the job is just too difficult, such score remained at the end.<br>Today, as the captain of the white team, I thank the teammates for their spirit. It is not about winning/losing but having fun playing. I am sure this is an unforgettable game added to our memory.
+                            </div>
+                            <div class="row-foot row-foot-roster">
+                                <div class="roster roster-white">
+                                    <span>Alan</span>
+                                    <span class="color-goalie">Albert</span>
+                                    <span>Anthony</span>
+                                    <span>Elkin</span>
+                                    <span>Jeff<span class="badge">1</span></span>
+                                    <span>Paul</span>
+                                    <span>Karson</span>
+                                    <span>Ronno</span>
+                                    <span>Kenny</span>
+                                    <span>Sam</span>
+                                    <span>Shun</span>
+                                    <span>SLing<span class="badge">2</span></span>
+                                </div>
+                                <div class="roster roster-blue">
+                                    <span class="color-goalie">Gary</span>
+                                    <span>Kevin</span>
+                                    <span>KK<span class="badge">2</span></span>
+                                    <span>Dicky<span class="badge">1</span></span>
+                                    <span class="color-goalie">Henry</span>
+                                    <span class="color-goalie">Kim</span>
+                                    <span>Kit</span>
+                                    <span class="color-goalie">SRay<span class="badge">1</span></span>
+                                    <span>BRay</span>
+                                    <span>Matt</span>
+                                    <span>Ping</span>
+                                    <span>Fai</span>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="column is-half">
+                    <div class="card" id="card-8">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                <img src="img/sfc-logo-32.jpg" />&nbsp;&nbsp;
+                                <span>Game 8</span>
+                            </p>
+                            <a href="" class="card-header-icon" aria-label="more options" onclick="return false">
+                                <span class="sp-ref">
+                                    ref:&nbsp;
+                                </span>
+                                <img src="img/tomato-24.png" />
+                                &nbsp;&nbsp;&nbsp;
+                                <span>
+                                    <!--<i class="fas fa-angle-down" aria-hidden="true"></i>-->
+                                    <time datetime="2019-07-05">05 July 2019</time>
+                                </span>
+                            </a>
+                        </header>
+
+                        <div class="card-content">
+                            <div class="row flex-baseline">
+                                <div class="team-cell team-white">SLing</div>
+                                <div class="mid-cell">vs</div>
+                                <div class="team-cell team-blue">Jeff</div>
+                            </div>
+                            <div class="row flex-center">
+                                <div class="team-cell team-white">3</div>
+                                <div class="mid-cell">:</div>
+                                <div class="team-cell team-blue">6</div>
+                            </div>
+                            <div class="row row-expblock">
+                                <div class="expblock" data-index="8">
+                                    <span class="expand-down">
+                                        <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <footer class="card-footer">
+                            <div class="row-foot">
+                                电台有炎热警告，组委会赛前特意凑足12x12的比赛，双方也貌似势均力敌。但随着一声哨响，比赛正式开始之后，显然蓝队对气候的适应比白队来得更快，蓝队的攻势如同一股低压热气流向白队一方袭卷而去。纵观比赛的进程，蓝队一直是遥遥领先的一方，第一节已是5:2，第二节蓝队再下一城，第三节白队收复一城，第四节互交白卷，止于6:3。我私以为，双方都为逃避炎热而赶着收工，第一节结束基本锁定比赛结果。当然这是讲笑，胜方希望乘胜追击，负方希望收复失地，双方打法开放，节奏紧凑，快速转换攻防方向，是一场高质量的比赛，只是蓝方更为流畅一点。<br>比赛当中不乏亮点：蓝队，队长Jeff万人敌镇守一方，中场大威威风八面并摧城拔一寨，超人大伦和辉哥各自梅开二度，加上奇兵Anthony建奇功。而白队，中场大将Karson禁区外远射建功，队长鬼仔悍卫空中霸权顶开蓝方大门，而鬼才6蚊大师巧妙助攻，由Paul仔施展扫膛腿得米，白方防守端，咖喱哥头皮破坏蓝方亨利哥的绝世好波，笼门KK也神勇扑出蓝方细威的点球。<br>真是一场精彩纷呈的比赛。希望大家继续支持和参与周五的大战，不畏炎热，把溢出的雄性荷尔蒙尽情燃烧在球场这块处女地上！<br>
+                                Before the game, there was heat wave warning. Our Admin team has organized a 12x12 game to counter this, and the two sides seems to quite evenly distributed. But with the whistle, it is obvious that Blue Team's adaptation to the game is way faster than the White. The Blue Team's offensive power acted like a wave of turbulence and crushing the White Team. Just within the first quarter, the score line has become 5:2. After that, one more goal during second quarter, and a catcu up goal by White Team in the third quarter. That's it 6:3 Blue Team win. People are joking that both sides were rushing to finish the game after first quarter just to escape the heat......of course, this is just joking. The winner wants to pursue the victory, the losing side hopes to recover. Just that the two sides play open style football, that's the reason of the high score line. It is a high-quality game, with Blue Team being the better side.<br>There are quite a number of highlights in the game: captain Jeff from Blue Team did a good job in defending, and this allows Big Ray, to dominate midfield, two strikers, Superman and Fai Gor both got doubles in this game, plus the outstanding attacking performance from Anthony, who also got a goal. On the other side, Karson from White Team, played midfield, shot from long distance and got a goal. Captain Simon Ling continued to dominate the air and he got a goal from header, and then our beloved $6 played a smart assist for Paul to score. Gary Gor defended a wonderful header from Henry Gor, and Goalie KK put out a penalty from the Blue to avoid further deficit.<br>It is quite a wonderful game. We hope everyone will continue to enjoy, forget about the heat, let the overflowing mal hormones on the field!
+                            </div>
+                            <div class="row-foot row-foot-roster">
+                                <div class="roster roster-white">
+                                    <span>Abby</span>
+                                    <span>Albert</span>
+                                    <span class="color-goalie">KK</span>
+                                    <span>Gary</span>
+                                    <span>$6</span>
+                                    <span>Karson<span class="badge">1</span></span>
+                                    <span>Paul<span class="badge">1</span></span>
+                                    <span class="color-goalie">Matt</span>
+                                    <span class="color-goalie">Ping</span>
+                                    <span class="color-goalie">Sam</span>
+                                    <span>Ronno</span>
+                                    <span>SLing<span class="badge">1</span></span>
+                                </div>
+                                <div class="roster roster-blue">
+                                    <span>Alan<span class="badge">2</span></span>
+                                    <span>Anthony<span class="badge">1</span></span>
+                                    <span class="color-goalie">Dicky</span>
+                                    <span>Jeff</span>
+                                    <span>Henry</span>
+                                    <span>Kim</span>
+                                    <span class="color-goalie">Roland</span>
+                                    <span>SRay</span>
+                                    <span>BRay<span class="badge">1</span></span>
+                                    <span>Kenny</span>
+                                    <span class="color-goalie">TT</span>
+                                    <span>Fai<span class="badge">2</span></span>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+
+                <div class="column is-half">
+                    <div class="card" id="card-7">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                <img src="img/sfc-logo-32.jpg" />&nbsp;&nbsp;
+                                <span>Game 7</span>
+                            </p>
+                            <a href="" class="card-header-icon" aria-label="more options" onclick="return false">
+                                <span class="sp-ref">
+                                    ref:&nbsp;
+                                </span>
+                                <img src="img/tomato-24.png" />
+                                &nbsp;&nbsp;&nbsp;
+                                <span>
+                                    <!--<i class="fas fa-angle-down" aria-hidden="true"></i>-->
+                                    <time datetime="2019-06-28">28 June 2019</time>
+                                </span>
+                            </a>
+                        </header>
+
+                        <div class="card-content">
+                            <div class="row flex-baseline">
+                                <div class="team-cell team-white">Henry</div>
+                                <div class="mid-cell">vs</div>
+                                <div class="team-cell team-blue">Ping</div>
+                            </div>
+                            <div class="row flex-center">
+                                <div class="team-cell team-white">2</div>
+                                <div class="mid-cell">:</div>
+                                <div class="team-cell team-blue">2</div>
+                            </div>
+                            <div class="row row-expblock">
+                                <div class="expblock" data-index="7">
+                                    <span class="expand-down">
+                                        <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <footer class="card-footer">
+                            <div class="row-foot">
+                                这是一场11好汉与11壮士的对决，双方势均力敌。上半场，双方胶着而紧张，互有攻守，都有得分良机，但半场过后，各自颗粒无收。<br>易边再战，场上风云突变。先是Jeff在边路一次精彩闪击，含枚驰进，左级右扣，最后右脚交左脚，怒射近门柱中鹞。<br>可惜蓝队好境不长，白队刚中圈开球，球至前场，Matt与TT一个简单的撞墙，紧接着Matt力压大威，快脚将球捅入蓝方大门。注意，你没听错，係力压大威，没几个人能做得到??。<br>不久，第四节更替笼门。白队立即招致守门员惊天一扑??，球漏到身后，由蓝队元老前锋阿拔哥机敏抢点为蓝队再度领先。而藍隊的正印龍门西门兄，带伤出赛，鞠躬尽瘁不得不退下火线，由场边观战的辉哥火速救援。<br>场面拉锯至最后一秒，白队也只有最后绝地一击，由Paul仔做球予超人大伦，大伦异常冷静地抡起左脚，搓出一道弧线，带着彩虹般的光芒飞向远门柱，令辉哥做出仪式般的倒地飞扑，也只是途劳。凭借着大伦宇宙级的压哨球，双方2:2，和气收场。<br>
+                                This is a showdown between 11 heroes and 11 heroes. Both sides are evenly matched. In the first half, the match between the two sides were glued and nervous, and each had good offensive and defensive moments. They all had good opportunities for opening the score, but at halftime, score line stays 0:0.<br>Getting into second half, the situation is abrupt. First, Blue team’s Jeff made a wonderful quick counter on the left side of the pitch, like driving the hyper race car, left to right and right to left, suddenly fired a shot with left foot, it is a tight angle got the lead for Blur team. Very quickly, White team responded: just kicked the ball in the middle, the ball to the frontcourt, Matt and TT a simple two one, followed by Matt to overcome the mighty Big Ray, quickly kick the ball into the blue door. What a moment!<br>Soon, in the fourth quarter White team has the goalie changed, but got themselves into deficit: it is a loose ball that wasn’t picked up properly and got stolen by Blue team’s But Got and got the ball sneak into the net. Blue team’s Goalie Simon got injury again and has to be replaced by Fai Gor. The battle continued… until the last minute, where Paul got the ball in front of the big penalty box and pass it back to Superman, and Superman calmly lifted his left foot and shot with an angle and probably a curly, got into the lower left corner that Goalie absolutely has no chance to reach… the score line 2:2 and that’s the end of the match!<br>What a good game – both sides got something!
+                            </div>
+                            <div class="row-foot row-foot-roster">
+                                <div class="roster roster-white">
+                                    <span>Alan<span class="badge">1</span></span>
+                                    <span>BillyF</span>
+                                    <span>Matt<span class="badge">1</span></span>
+                                    <span>Henry</span>
+                                    <span>Kevin</span>
+                                    <span>Paul</span>
+                                    <span class="color-goalie">Peter</span>
+                                    <span class="color-goalie">SRay</span>
+                                    <span>Kenny</span>
+                                    <span>TT</span>
+                                    <span class="color-goalie">Shun</span>
+                                </div>
+                                <div class="roster roster-blue">
+                                    <span>Albert<span class="badge">1</span></span>
+                                    <span>$6</span>
+                                    <span>Jeff<span class="badge">1</span></span>
+                                    <span>Gary</span>
+                                    <span>Dennis</span>
+                                    <span>Kim</span>
+                                    <span>Roland</span>
+                                    <span>Ping</span>
+                                    <span>BRay</span>
+                                    <span class="color-goalie">SLeung</span>
+                                    <span>Wilton</span>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="column is-half">
+                    <div class="card" id="card-6">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                <img src="img/sfc-logo-32.jpg" />&nbsp;&nbsp;
+                                <span>Game 6</span>
+                            </p>
+                            <a href="" class="card-header-icon" aria-label="more options" onclick="return false">
+                                <span class="sp-ref">
+                                    ref:&nbsp;
+                                </span>
+                                <img src="img/tomato-24.png" />
+                                &nbsp;&nbsp;&nbsp;
+                                <span>
+                                    <!--<i class="fas fa-angle-down" aria-hidden="true"></i>-->
+                                    <time datetime="2019-06-21">21 June 2019</time>
+                                </span>
+                            </a>
+                        </header>
+
+                        <div class="card-content">
+                            <div class="row flex-baseline">
+                                <div class="team-cell team-white">Sam</div>
+                                <div class="mid-cell">vs</div>
+                                <div class="team-cell team-blue">Gary</div>
+                            </div>
+                            <div class="row flex-center">
+                                <div class="team-cell team-white">2</div>
+                                <div class="mid-cell">:</div>
+                                <div class="team-cell team-blue">1</div>
+                            </div>
+                            <div class="row row-expblock">
+                                <div class="expblock" data-index="6">
+                                    <span class="expand-down">
+                                        <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <footer class="card-footer">
+                            <div class="row-foot">
+                                又是一場精彩的藍白大戰！本場比賽正值「夏至」，也適逢Matt回歸SFC週五的第一場比賽。<br>比賽從一開始就進入高潮，藍隊的邊鋒城城在左側持球，通過一個簡單的擺脫就起腳，皮球應聲入網：藍隊1:0領先。白隊不甘落後，隊長Sam在前場積極反搶，把球轉移到On哥腳下，On哥一個假動作轉身平地起腳射門，皮球的角度恰到好處而且力度十足，應聲入網，比分改寫成1:1。這僅僅是比賽的第一節！<br>比賽繼續，雙方都互有攻守，到了第三節，又是On哥，在藍隊底線右側附近取得皮球後，以一記左腳弧線球繞過藍隊後衛龍門後射中遠角入網，白隊取得領先。<br>隨後的比賽，雙方都增加了攻防的力度，尤其是藍隊在中前場取得幾個不錯的機會，可惜最後的把握有所欠缺，無法改寫比分。比分維持至最後。白隊2:1取勝。<br>綜述比賽，藍隊機會更多，只是把握方面白隊更為出色。而值得一提的是本場比賽是On哥開季經歷五場球荒以來首場比賽收穫入球，而一來就來個「梅開二度」！<br>
+                                Another wonderful Blue-and-White battle! The game coincides with the \"Summer solstice\" and coincides with Matt's return to the first game of SFC Friday.<br>The game entered the climax from the beginning, Blue Team's winger Shing Shing held the ball on the left side, through a simple get rid of the defender, the ball slammed into the net: the blue team lead 1:0. The white team was unwilling to log behind. Captain Sam actively restored in the frontcourt and transferred the ball to the foot of On. On Gor quickly turned and shot from the spot: the angle of the ball was just right and it is a powerful shot! The scoreline was rewritten into 1:1. This is just the first quarter of the game! The game continued, both sides had good moments of offensive and defensive play. In the third quarter, it was On Gor again. After getting the ball near the right side of the blue team's bottom line, he took a left-footed curly ball bypassing Blue Team defenders and goalie, and hit the far corner into the net. White Team took the lead. In the subsquent games, both sides increased their offensive and defensive efforts, especially Blue Team made several good opportunities in White Team's half. Unfortunately the final grasp was lacking and the score could not be rewitten. The score is maintained until the end. White Team won 2:1.<br>In summary, Blue Team might have more opportunities, but the win goes to the team that can take the chance which is White Team. It is worth metioning that this game is the first game since season opening On Gor get scores, and as it comes he scored 2!
+                            </div>
+                            <div class="row-foot row-foot-roster">
+                                <div class="roster roster-white">
+                                    <span>Alan</span>
+                                    <span>BillyF</span>
+                                    <span class="color-goalie">Dennis</span>
+                                    <span class="color-goalie">BB</span>
+                                    <span>Kevin</span>
+                                    <span>Elkin</span>
+                                    <span class="color-goalie">Paul</span>
+                                    <span>Henry</span>
+                                    <span>Sam</span>
+                                    <span class="color-goalie">SLing</span>
+                                    <span>TT</span>
+                                    <span>On<span class="badge">2</span></span>
+                                </div>
+                                <div class="roster roster-blue">
+                                    <span>Jeff</span>
+                                    <span>Kenny</span>
+                                    <span class="color-goalie">KK</span>
+                                    <span class="color-goalie">Gary</span>
+                                    <span>Dicky<span class="badge">1</span></span>
+                                    <span class="color-goalie">BRay</span>
+                                    <span>Kim</span>
+                                    <span>Kit</span>
+                                    <span>Ping</span>
+                                    <span>Shun</span>
+                                    <span>Ronno</span>
+                                    <span class="color-goalie">Matt</span>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+
+                <div class="column is-half">
+                    <div class="card" id="card-5">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                <img src="img/sfc-logo-32.jpg" />&nbsp;&nbsp;
+                                <span>Game 5</span>
+                            </p>
+                            <a href="" class="card-header-icon" aria-label="more options" onclick="return false">
+                                <span class="sp-ref">
+                                    ref:&nbsp;
+                                </span>
+                                <img src="img/tomato-24.png" />
+                                &nbsp;&nbsp;&nbsp;
+                                <span>
+                                    <!--<i class="fas fa-angle-down" aria-hidden="true"></i>-->
+                                    <time datetime="2019-06-14">14 June 2019</time>
+                                </span>
+                            </a>
+                        </header>
+
+                        <div class="card-content">
+                            <div class="row flex-baseline">
+                                <div class="team-cell team-white">$6</div>
+                                <div class="mid-cell">vs</div>
+                                <div class="team-cell team-blue">On</div>
+                            </div>
+                            <div class="row flex-center">
+                                <div class="team-cell team-white">5</div>
+                                <div class="mid-cell">:</div>
+                                <div class="team-cell team-blue">2</div>
+                            </div>
+                            <div class="row row-expblock">
+                                <div class="expblock" data-index="5">
+                                    <span class="expand-down">
+                                        <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <footer class="card-footer">
+                            <div class="row-foot">
+                                Tonight's the clash of two Bald Heads. The shorter one came up on top. White team received an early gift, an own goal to open the score sheet. Shortly thereafter, Superman shot a one timer and gave goalie no chance of saving. Two quick goals in Q1. The lead didn't last long, Blue tied the match early in the second half. The equalizer was a power shot by Kit from beyond the 18 yards box that caught the upper corner of the goal. The 5'4 goalie can only helplessly watch the ball went in. White team immediately mounted a serious of counter attacks. BB gave White Team the lead back by calmly controlled the ball inside the box and scored. Ronno is the receiver of two great crosses and finished both technically sound. A well balanced team effort by White that ended with a winning score of 5:2.<br>
+                                今晚是兩名光頭球員的對抗，個子較小的一個取得了更好的成績。<br>比賽不久，白隊就收到了一份禮物，打開比分。此後不久，超人的一個神來之筆吊射入網：這個入球完全沒有給守門員任何機會。這樣第二節早段白隊已經兩球領先。不過這個領先沒有持續很長時間，藍隊在下半場前段追平比分。值得一提的是藍隊追平的一球是Kit哥一腳氣大力沉的18碼外的遠射，球直接飛向球門右上角直接破網，白隊5尺4的龍門只能望球興嘆。之後白隊立刻大舉反擊。 BB通過禁區內冷靜控球並且推射遠角白隊繼續取得領先。 之後藍隊邊鋒Ronno成功在藍隊禁區右前方把握機會將比分繼續擴大。<br>綜觀全場比賽白隊以更具活力的表現獲得了一場5:2的勝利。
+                            </div>
+                            <div class="row-foot row-foot-roster">
+                                <div class="roster roster-white">
+                                    <span class="color-goalie">Alan<span class="badge">1</span></span>
+                                    <span>BillyF</span>
+                                    <span class="color-goalie">$6</span>
+                                    <span>BB<span class="badge">1</span></span>
+                                    <span>BRay</span>
+                                    <span>Dennis</span>
+                                    <span class="color-goalie">Jeff</span>
+                                    <span>Ping<span class="badge">1</span></span>
+                                    <span>Kim</span>
+                                    <span class="color-goalie">Kenny</span>
+                                    <span>Ronno<span class="badge">2</span></span>
+                                </div>
+                                <div class="roster roster-blue">
+                                    <span>Abby</span>
+                                    <span>Anthony</span>
+                                    <span>Dicky</span>
+                                    <span>Gary</span>
+                                    <span class="color-goalie">Henry</span>
+                                    <span>Kevin</span>
+                                    <span>Kit<span class="badge">1</span></span>
+                                    <span>SLing</span>
+                                    <span>Paul<span class="badge">1</span></span>
+                                    <span>Fai</span>
+                                    <span>On</span>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="column is-half">
+                    <div class="card" id="card-4">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                <img src="img/sfc-logo-32.jpg" />&nbsp;&nbsp;
+                                <span>Game 4</span>
+                            </p>
+                            <a href="" class="card-header-icon" aria-label="more options" onclick="return false">
+                                <span class="sp-ref">
+                                    ref:&nbsp;
+                                </span>
+                                <img src="img/tomato-24.png" />
+                                &nbsp;&nbsp;&nbsp;
+                                <span>
+                                    <!--<i class="fas fa-angle-down" aria-hidden="true"></i>-->
+                                    <time datetime="2019-06-07">07 June 2019</time>
+                                </span>
+                            </a>
+                        </header>
+
+                        <div class="card-content">
+                            <div class="row flex-baseline">
+                                <div class="team-cell team-white">Kenny</div>
+                                <div class="mid-cell">vs</div>
+                                <div class="team-cell team-blue">TT</div>
+                            </div>
+                            <div class="row flex-center">
+                                <div class="team-cell team-white">2</div>
+                                <div class="mid-cell">:</div>
+                                <div class="team-cell team-blue">3</div>
+                            </div>
+                            <div class="row row-expblock">
+                                <div class="expblock" data-index="4">
+                                    <span class="expand-down">
+                                        <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <footer class="card-footer">
+                            <div class="row-foot">
+                                The fourth game of season continued to be match of 11 vs. 11. The game was played in very good weather (finally in June, there was a feeling of summer!). From the start, both teams got into the game quickly, there were high speed running, quick passes, and good shots throughout the 90 mins. The game is very much a seesaw game: the gameline 1:0, 1:1, 2:1, 2:2, 3:2 is a good reflection of that. Both teams got good oppotunities, at the end, the better offensive Blue Team won the game with the winning good scored in the final 10 minutes.<br>It is worth mentioning that Shing Shing from Blue Team has continued his excellent from since the opening of this season, in this game, he scored 2 goals including the winning goal. Also, Bill Gor from White Team has a direct free kick scored into the net which was another great goal that won lots of applauses.<br>Since the start of this season, we have witnessed four close competitive games, all four games went very well, there have been many good shots, and scoreline was never boring, more importantly every player's fully commitment is indispensable. Let's continue to enjoy the wonderful outdoor soccer in Toronto!<br>
+                                本賽季第四場比賽繼續是11 vs 11的對抗，比賽在很不錯的天氣下進行，來到6月，終於有夏天的感覺。比賽從一開始兩隊很快就進入了狀態，高速的奔跑，凌厲的突破，富有創意的射門，比賽高潮迭起。90分鐘的比賽雙方互有攻守，比賽過程很拉鋸：比分發展1:0，1:1，2:1，2:2，3:2是很好的寫照。全場比賽白隊和藍隊都有很不錯的機會，而在進攻方面更加銳利的藍隊最後以一球小勝。<br>特別值得一提的是藍隊城城繼續本季開季以來的神勇，梅開二度。另外，白隊Billy 哥的自由球直接入網也可謂技驚四座。<br>本賽季至此四場比賽比分都很接近，過程都很緊湊，其中更是不乏精彩射門，而每一位球員的全情投入功不可沒。希望接下來的比賽各位繼續享受多倫多夏季outdoor足球！
+                            </div>
+                            <div class="row-foot row-foot-roster">
+                                <div class="roster roster-white">
+                                    <span>Alan</span>
+                                    <span class="color-goalie">BillyF<span class="badge">1</span></span>
+                                    <span>Dennis</span>
+                                    <span>Karson<span class="badge">1</span></span>
+                                    <span class="color-goalie">Kevin</span>
+                                    <span class="color-goalie">Kim</span>
+                                    <span>Paul</span>
+                                    <span class="color-goalie">Kenny</span>
+                                    <span>On</span>
+                                    <span>SLing</span>
+                                    <span>Fai</span>
+                                </div>
+                                <div class="roster roster-blue">
+                                    <span>BillyC</span>
+                                    <span class="color-goalie">Ping</span>
+                                    <span>BB<span class="badge">1</span></span>
+                                    <span class="color-goalie">Gary</span>
+                                    <span>Dicky<span class="badge">2</span></span>
+                                    <span>BRay</span>
+                                    <span>Roland</span>
+                                    <span>TT</span>
+                                    <span>Jeff</span>
+                                    <span class="color-goalie">Sam</span>
+                                    <span class="color-goalie">Ronno</span>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+
+                <div class="column is-half">
+                    <div class="card" id="card-3">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                <img src="img/sfc-logo-32.jpg" />&nbsp;&nbsp;
+                                <span>Game 3</span>
+                            </p>
+                            <a href="" class="card-header-icon" aria-label="more options" onclick="return false">
+                                <span class="sp-ref">
+                                    ref:&nbsp;
+                                </span>
+                                <img src="img/tomato-24.png" />
+                                &nbsp;&nbsp;&nbsp;
+                                <span>
+                                    <!--<i class="fas fa-angle-down" aria-hidden="true"></i>-->
+                                    <time datetime="2019-05-31">31 May 2019</time>
+                                </span>
+                            </a>
+                        </header>
+
+                        <div class="card-content">
+                            <div class="row flex-baseline">
+                                <div class="team-cell team-white">BillyF</div>
+                                <div class="mid-cell">vs</div>
+                                <div class="team-cell team-blue">Dennis</div>
+                            </div>
+                            <div class="row flex-center">
+                                <div class="team-cell team-white">2</div>
+                                <div class="mid-cell">:</div>
+                                <div class="team-cell team-blue">1</div>
+                            </div>
+                            <div class="row row-expblock">
+                                <div class="expblock" data-index="3">
+                                    <span class="expand-down">
+                                        <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <footer class="card-footer">
+                            <div class="row-foot">
+                                In the first 11 vs. 11 match of the season, White team started with 2 players short. The half field strategy held off the waves of Blue's attacks. As soon as White formed a full squad, the tide changed. Paul scored two quick goals and that is all White needs to win the match. The first goal was a corner kick by Superman that found Ling Ling at the far pole. He headed the ball towards the goal and Paul being in perfect position headed it in right at the goal line. The second goal was a result of some hard work in the midfield which White eventually gained possession and then made a deadly pass to the speedy Paul. He calmly scored the 1 V 1. The lone Blue goal came in the second half. The \"is it a cross\" or \"is it a shot\" by Sing Sing outside the box found the perfect upper far corner. Since then, Blue's rentless attacks stopped by White's strong defensive squad led by Bray. White held on the lead until the final whistle is blown.<br>
+                                在本賽季的第一場11對11的比賽中，白隊從一開始時就少打兩名球員，半場密集防守的戰略阻擋了藍隊攻擊的浪潮，當人員陸續到位，白隊組建了一支完整的陣容後，比賽的格局開始發生變化。Paul打入了兩個快速進球，而這就是白隊所需贏得比賽的入球數目：第一個進球是超人的角球，在遠極發現Ling Ling。他將球頂向了球門附近，由Paul在一個完美的位置輕易把球送過門線；第二個進球是在白隊中場球員積極拼搶下成功攔截獲得了控球權，運用一個成功的反越位戰術長傳越過中線由Paul快速突破籃隊防線保，製造一個單刀成功得分。而藍隊唯一進球來自下半場。由城城在禁區外面的一個「傳球抑或射門？」的巧妙入球。從那時起，急於扳平的藍隊全軍押上，展開一輪又一輪的狂攻，而由大Ray帶領的白隊防守陣線頂住了一次次險情。白方終於保持勝利比分直到終場哨響。
+                            </div>
+                            <div class="row-foot row-foot-roster">
+                                <div class="roster roster-white">
+                                    <span>Alan</span>
+                                    <span>BillyF</span>
+                                    <span>$6</span>
+                                    <span>Kim</span>
+                                    <span class="color-goalie">BRay</span>
+                                    <span>Paul<span class="badge">2</span></span>
+                                    <span>Ping</span>
+                                    <span>SRay</span>
+                                    <span class="color-goalie">Roland</span>
+                                    <span class="color-goalie">SLing</span>
+                                    <span class="color-goalie">Fai</span>
+                                </div>
+                                <div class="roster roster-blue">
+                                    <span>BB</span>
+                                    <span>BillyC</span>
+                                    <span>Dicky<span class="badge">1</span></span>
+                                    <span>Dennis</span>
+                                    <span>Elkin</span>
+                                    <span class="color-goalie">Jeff</span>
+                                    <span>Gray</span>
+                                    <span class="color-goalie">TT</span>
+                                    <span>Karson</span>
+                                    <span class="color-goalie">Kevin</span>
+                                    <span class="color-goalie">On</span>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="column is-half">
+                    <div class="card" id="card-2">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                <img src="img/sfc-logo-32.jpg" />&nbsp;&nbsp;
+                                <span>Game 2</span>
+                            </p>
+                            <a href="" class="card-header-icon" aria-label="more options" onclick="return false">
+                                <span class="sp-ref">
+                                    ref:&nbsp;
+                                </span>
+                                <img src="img/tomato-24.png" />
+                                &nbsp;&nbsp;&nbsp;
+                                <span>
+                                    <!--<i class="fas fa-angle-down" aria-hidden="true"></i>-->
+                                    <time datetime="2019-05-24">24 May 2019</time>
+                                </span>
+                            </a>
+                        </header>
+
+                        <div class="card-content">
+                            <div class="row flex-baseline">
+                                <div class="team-cell team-white">Karson</div>
+                                <div class="mid-cell">vs</div>
+                                <div class="team-cell team-blue">BB</div>
+                            </div>
+                            <div class="row flex-center">
+                                <div class="team-cell team-white">2</div>
+                                <div class="mid-cell">:</div>
+                                <div class="team-cell team-blue">3</div>
+                            </div>
+                            <div class="row row-expblock">
+                                <div class="expblock" data-index="2">
+                                    <span class="expand-down">
+                                        <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <footer class="card-footer">
+                            <div class="row-foot">
+                                比賽與上週第一場比賽幾乎如出一轍，藍隊同樣倒追3球進帳，上半場2球加下半場1球；而白隊也是在第一節早早確立領先優勢，無奈入少1球只得2球，導致最終飲恨。<br>回看過程，白隊高開低走，藍隊知恥而後勇。開場十分鐘，白隊趁藍隊陣腳未穩，在藍隊門前混亂當中，由西門哥與超人連下兩城。藍隊才如夢初醒，向白隊施加壓力，分由城城、Anthony、大Billy發出3記天外飛仙，一記比一記遠，特別是大Billy在中圈附近力大步沉的逆天吊射，藍隊反勝。<br>藍隊倚仗前場隊員的個人能力，多數從中後場大腳起球找前點，缺乏了細膩的地面配合。反而白隊在比賽初期，在大威的強力攔截下就地轉換成中場組織，加上兩翼齊飛，打出一波地面攻勢。足球的一個組成部份是運氣，白隊的首開紀錄功臣西門哥在半場末段的受傷離場，讓白隊整個下半場打少一個而陷入被動。藍隊的第二個入球也是多少有點意外，在球仍沒有成為死球和裁判的雞聲音的情況下，白隊主動放棄防守。同時藍隊也錯過幾次必進之球，而白隊打少一人之下頑強抵禦雖敗猶榮。<br>週五晚的比賽歷來都是SFC的頭盤，期待一眾球員能夠養精蓄銳，受傷球員早日康復，演繹下一回的精彩。<br>
+                                The game was almost the same as the first game last week, the Blue team also chased 3 goals, 2 goals in the first half plus 1 goals in the second half, and the White team also in the first quarter to establish an early lead, helpless to 1 goals less than 2 balls, resulting in the final loss. Looking back at the process, the White team performed well at the opening but slowly faded, on the other side, the Blue team grew their confidence and performance while the game continued. In the opening 10 minutes, the white team, while the blue team was in disarray, was in the midst of chaos in front of the Blue Team, with Simon and Superman got two beautiful goals. The Blue team woke up, applied much bigger pressure to the White team, there were Shing Shing, Anthony, Big Billy issued 3 of the Sky Flying Fairy long shot, one more than the other, especially the big Billy in the middle circle near the heavy sinking of the anti-sky crane, the Blue team took the lead. The Blue team relied on the personal ability of the forward players, most of the rear foot pilling to find the front point, the lack of delicate ground cooperation. Instead, the White team in the early part of the game, in the strong interception of Big Ray into the midfield organization, plus the two wings of the fly, hit a wave of good ground offensive performance. One part of football is luck, and the White team's first record is that Simon's injury off the field at the end of the half-time, leaving the white team to play less in the second half and into passivity. The Blue team's second goal was also somewhat of a surprise, with the white team giving up the defence, watching the ball slowly got into the net, while yelling for 'offside' whistle from our referee that never arrived - it is a silly goal conceded.<br>At the same time, the Blue team also missed a few big chance, and the White team with less than a person under the tenacious resistance although the defeat is still a proud performance. Friday night's game has always been the main event of SFC, looking forward to a crowd of players can refresh, injured players early recovery, deduce the next wonderful.
+                            </div>
+                            <div class="row-foot row-foot-roster">
+                                <div class="roster roster-white">
+                                    <span>Alan<span class="badge">1</span></span>
+                                    <span>Gary</span>
+                                    <span class="color-goalie">Karson</span>
+                                    <span>BillyF</span>
+                                    <span>BRay</span>
+                                    <span>Kim</span>
+                                    <span>SLeung<span class="badge">1</span></span>
+                                    <span>Kevin</span>
+                                    <span class="color-goalie">Shun</span>
+                                    <span>Ping</span>
+                                    <span class="color-goalie">Sam</span>
+                                    <span class="color-goalie">William</span>
+                                </div>
+                                <div class="roster roster-blue">
+                                    <span>Abby</span>
+                                    <span>Anthony<span class="badge">1</span></span>
+                                    <span>BillyC<span class="badge">1</span></span>
+                                    <span>BB</span>
+                                    <span>Dicky<span class="badge">1</span></span>
+                                    <span>Dennis</span>
+                                    <span class="color-goalie">Kenny</span>
+                                    <span>$6</span>
+                                    <span>Jeff</span>
+                                    <span class="color-goalie">Paul</span>
+                                    <span class="color-goalie">SRay</span>
+                                    <span class="color-goalie">Ronno</span>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+
+                <div class="column is-half">
+                    <div class="card" id="card-1">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                <img src="img/sfc-logo-32.jpg" />&nbsp;&nbsp;
+                                <span>Game 1</span>
+                            </p>
+                            <a href="" class="card-header-icon" aria-label="more options" onclick="return false">
+                                <span class="sp-ref">
+                                    ref:&nbsp;
+                                </span>
+                                <img src="img/tomato-24.png" />
+                                &nbsp;&nbsp;&nbsp;
+                                <span>
+                                    <!--<i class="fas fa-angle-down" aria-hidden="true"></i>-->
+                                    <time datetime="2019-05-17">17 May 2019</time>
+                                </span>
+                            </a>
+                        </header>
+
+                        <div class="card-content">
+                            <div class="row flex-baseline">
+                                <div class="team-cell team-white">Alan</div>
+                                <div class="mid-cell">vs</div>
+                                <div class="team-cell team-blue">BillyC</div>
+                            </div>
+                            <div class="row flex-center">
+                                <div class="team-cell team-white">3</div>
+                                <div class="mid-cell">:</div>
+                                <div class="team-cell team-blue">3</div>
+                            </div>
+                            <div class="row row-expblock">
+                                <div class="expblock" data-index="1">
+                                    <span class="expand-down">
+                                        <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <footer class="card-footer">
+                            <div class="row-foot">
+                                The field condition was less than ideal. It was wet, thick grasses, and there is no net. But the weather was perfect and so were the players enthusiasm. White team was more hungry from the start and quickly scored three goals in a span of 20 minutes; first by Ping, then Paul and followed by TT. Couple of them were solid strike and good placement. Blue team appeared to have awaken and organized some counter attacks assisted by some spectacular goalie performance by KPop (BB). Karson calmly picked the top corner of the goal after a good cross by Shing Shing and ended Blue's draught. Jeff then fired a long distance shot and scored at the same top corner. One goal deficit after first half. The attacks by Blue continued at the second half. Jeff's hard work inside the box earned a penalty.  Cool like a steel rod, Peter The Great tied the score at 3:3 and that is how the match ended.<br>Thanks for the drop in players who helped form the full squad. A great first match and well played by everyone. It's a good sign for a fun summer season.<br>
+                                由於還是季度初期，場地的條件不太理想：場地潮濕，草是厚厚的一層，龍門沒有拉網。好在天氣很不錯，溫度非常合適，藍白兩隊球員的熱情也是如此。<br>白隊從第一分鐘就發力，很早進入狀態，在20分鐘內迅速打入三球：首先是Ping，然後是Paul，再然後是TT。他們的入球在傳射方面都很有水準。比賽第二節韓星（BB）為籃隊守門表現了很高水準，力保龍門不再失守。之後藍隊在進攻方面終於開始覺悟，組織了好一些漂亮的反擊：城城的一次漂亮的傳中，球落在Karson腳下，他平靜地選中了球門的頂角為籃隊首開紀錄；之後Jeff的一記遠射，巧妙地在龍門左上角吊入得分。半場結束時藍白兩隊比分已經很接近 2:3。下半場開球後，藍隊繼續強有力的攻勢，Jeff在禁區內獲得了點球。表現出彩的Peter冷靜地射入點球！此時雙方比分3：3....<br>比賽的餘下時間雙方都有不錯的機會，可惜都未能把握。3:3就是比賽的最終結果。<br>感謝多位後備球員幫助這場比賽可以如常進行。這是一場很不錯的季節首場比賽。或許這是一個我們這個夏季的一個好兆頭。
+                            </div>
+                            <div class="row-foot row-foot-roster">
+                                <div class="roster roster-white">
+                                    <span>Alan</span>
+                                    <span>BillyF</span>
+                                    <span>Kevin</span>
+                                    <span class="color-goalie">Kim</span>
+                                    <span>Kam</span>
+                                    <span>TT<span class="badge">1</span></span>
+                                    <span>Paul<span class="badge">1</span></span>
+                                    <span>Ping<span class="badge">1</span></span>
+                                    <span>SRay</span>
+                                    <span>Ronno</span>
+                                    <span class="color-goalie">Sunny</span>
+                                    <span>On</span>
+                                </div>
+                                <div class="roster roster-blue">
+                                    <span class="color-goalie">BB</span>
+                                    <span class="color-goalie">BillyC</span>
+                                    <span class="color-goalie">Dicky</span>
+                                    <span class="color-goalie">Dennis</span>
+                                    <span>$6</span>
+                                    <span>Hansen</span>
+                                    <span>Jeff<span class="badge">1</span></span>
+                                    <span>Joe</span>
+                                    <span>BRay</span>
+                                    <span>Karson<span class="badge">1</span></span>
+                                    <span>Peter<span class="badge">1</span></span>
+                                    <span>Shun</span>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type='text/javascript' src="/js/sfc.js"></script>
+
+    <script>
+        //let results = null;
+	    //$(document).ready(function(){
+            //let surl = 'https://api.mlab.com/api/1/databases/sfcdb/collections/MatchesOutdoor2019?apiKey=m1QZo1IgF6SGC5zAgYCcseYPWf5xIsRS';
+		   // let oData = null;
+		   // sfc.myAjax(surl, oData, 'GET').then((data) => {
+		   //     results = data;
+		   //     console.log(results);
+		   // });
+
+	    //});
+
+	    $('.expblock').on('click', function (e) {
+	        e.preventDefault();
+	        e.stopPropagation();
+            
+	        let index = $(this).data("index");
+
+	        if ($('#card-' + index + ' .card-footer').is(":visible")) {
+	            $('#card-' + index + ' .card-footer').hide('slow');
+	            $('#card-' + index + ' .expblock').css({
+	                "box-shadow": "0px 2px 2px 0px rgba(0,0,0,0.16), 0px 0px 0px 1px rgba(0,0,0,0.08), inset 0px 0px 0px 0px rgba(0,0,0,0.1), inset 0px 0px 0px 0px rgba(255,255,255,0.5)",
+	                transform: "rotate(0deg)"
+	            });
+	        }
+	        else {
+	            $('#card-' + index + ' .card-footer').show('slow');
+	            $('#card-' + index + ' .expblock').css({
+	                "box-shadow": "none",
+	                transform: "rotate(180deg)"
+	            });
+	        }
+	        
+
+	    });
+    </script>
+</body>
+</html>
+

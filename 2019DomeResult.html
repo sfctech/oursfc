@@ -1,0 +1,323 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2019 Summer Outdoor Friday Matches Result</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <style>
+        .content {
+            font-size: 1.5em;
+        }
+
+        .card {
+            margin-bottom: 10px;
+        }
+
+        .card-header {
+            display: flex;
+            width: 100%;
+        }
+
+        .row {
+            display: inline-flex;
+            width: 100%;
+            text-align: center;
+        }
+
+        .row-expblock {
+            float: left; 
+            margin-top: -5px;
+        }
+
+        .team-cell {
+            width: 44.8%;
+            font-size: 1.5em;
+            font-weight: 700;
+        }
+
+        .team-white {
+            color: #c0c0c0;
+        }
+
+        .team-red {
+            color: #ff0000;
+        }
+
+        .team-blue {
+            color: #0000ff;
+        }
+
+        .mid-cell {
+            width: 10%;
+            font-weight: 700;
+            color: darkslateblue;
+        }
+
+        .sp-ref {
+            color: #666;
+            font-weight: 500;
+        }
+
+        .flex-baseline {
+            align-items: baseline;
+        }
+
+        .flex-center {
+            align-items: center;
+        }
+
+        .row-foot {
+            text-align: left;
+            padding: 10px;
+            color: rgba(0,0,0,.54);
+            font-size: .9em;
+            font-weight: 500;
+        }
+
+        .row-foot-roster {
+            display: flex; 
+            border-top: 1px dotted #e0e0e0;
+        }
+
+        .row-foot span {
+            margin: 0 10px;
+            display: inline-block;
+            position: relative;
+        }
+
+        .row-foot span > .badge {
+            width: 12px;
+            height: 12px;
+            display: inline-flex;
+            line-height: 12px;
+            padding-left: 3px;
+            font-size: .6em;
+            font-weight: 700;
+            background-color: #a0a0a0;
+            border-radius: 50%;
+            margin: 0;
+            position: absolute;
+            color: #fff;
+        }
+
+        .row-foot span > .badge-og {
+            width: 12px;
+            height: 12px;
+            display: inline-flex;
+            line-height: 12px;
+            padding-left: 3px;
+            font-size: .6em;
+            font-weight: 700;
+            background-color: red;
+            border-radius: 50%;
+            margin: 0;
+            position: absolute;
+            color: #fff;
+        }
+
+        .roster {
+            display: inline-block;
+            line-height: 25px;
+            padding: 5px 5px;
+            font-size: 1em;
+        }
+
+        .roster-red {
+            background-color: red;
+            color: #fff;
+        }
+
+        .roster-blue {
+            background-color: #010178;
+            color: #fff;
+        }
+
+        .roster-white {
+            color: #444;
+        }
+
+        .expblock {
+	        position: relative;
+	        z-index: 3;
+	        margin: 10px auto;
+            width: 40px;
+            height: 40px;
+            background-color: #01579B;
+            border-radius: 50%;
+            box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16), 0px 0px 0px 1px rgba(0,0,0,0.08), inset 0px 0px 0px 0px rgba(0,0,0,0.1), inset 0px 0px 0px 0px rgba(255,255,255,0.5);
+        }
+        .expblock:hover {
+	        cursor: pointer;
+        }
+
+        .expand-down {
+		    position: relative;
+            display: inline-block;
+            fill: currentColor;
+            height: 24px;
+            line-height: 24px;
+            width: 24px;
+            color: #fff;
+        }
+
+        .expand-down svg {
+            display: block;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-15%);
+        }
+
+        .card-footer {
+            display: none; 
+            width: 100%;
+        }
+
+        .color-goalie {
+            color: darkturquoise;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="section" style="padding: 1em 1.5em">
+        <div class="navbar-item" style="margin-bottom: 15px; padding-left: 0;">
+            <a class="button is-primary is-small is-outlined" href="/stat2019dome">2019-2020 Winter Dome Friday Games Statistic</a>
+        </div>
+
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half">
+                    <div class="card" id="card-1">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                <img src="img/sfc-logo-32.jpg" />&nbsp;&nbsp;
+                                <span>Game 1</span>
+                            </p>
+                            <a href="" class="card-header-icon" aria-label="more options" onclick="return false">
+                                <span class="sp-ref">
+                                    ref:&nbsp;
+                                </span>
+                                <img src="img/tomato-24.png" />
+                                &nbsp;&nbsp;&nbsp;
+                                <span>
+                                    <!--<i class="fas fa-angle-down" aria-hidden="true"></i>-->
+                                    <time datetime="2019-08-16">18 Oct 2019</time>
+                                </span>
+                            </a>
+                        </header>
+
+                        <div class="card-content">
+                            <div class="row flex-baseline">
+                                <div class="team-cell team-white">SLeung</div>
+                                <div class="mid-cell">vs</div>
+                                <div class="team-cell team-blue">SRay</div>
+                            </div>
+                            <div class="row flex-center">
+                                <div class="team-cell team-white">2</div>
+                                <div class="mid-cell">:</div>
+                                <div class="team-cell team-blue">2</div>
+                            </div>
+                            <div class="row row-expblock">
+                                <div class="expblock" data-index="1">
+                                    <span class="expand-down">
+                                        <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <footer class="card-footer">
+                            <div class="row-foot">
+                                2019-2020冬季開鑼的第一場賽事,，歡迎順哥和阿大加入週五比賽晉升常規成員。<br>門賽不久藍隊一次突擊，阿安就以身形力壓對方後衛低射地波入網，1：0藍隊領先。之後白隊後防大威幾次遠程傳球，可惜白隊前鋒忘帶射門鞋，無功而返，而阿大做龍門時也救出不少險球確保白隊不再失球。白隊狂攻下終於有斬獲，一記角球由超人倫開出，西門梁門前在人羣中冷靜清醒下執雞掃把腳射穿密麻麻人牆射入追成1：1 平手。不久，超人倫在藍隊一次失誤下截到皮球，在禁區邊緣射出一個強而有力在橫楣下入網，白隊就以2：1 暫時領先上半場。<br>下半場藍隊變陣將波仔移上，藍隊則繼續不少攻勢，阿安在禁區帶球由左到中施射入右下方，2：2 。之後雙方互有攻守，都是有驚無險，就以這比數平分秋色結束今季第一場比賽。<br>今場比賽白隊最佳球員是一柱擎天的大威，藍隊則是射入两球的阿安。
+                            </div>
+                            <div class="row-foot row-foot-roster">
+                                <div class="roster roster-white">
+                                    <span class="color-goalie">Alan<span class="badge">1</span></span>
+                                    <span class="color-goalie">BillyC</span>
+                                    <span class="color-goalie">Dennis</span>
+                                    <span class="color-goalie">Dicky</span>
+                                    <span>Kenny</span>
+                                    <span>KK</span>
+                                    <span>Kim</span>
+                                    <span>Ping</span>
+                                    <span>BRay</span>
+                                    <span>SLeung<span class="badge">1</span></span>
+                                    <span>Fai</span>
+                                </div>
+                                <div class="roster roster-blue">
+                                    <span class="color-goalie">Abby</span>
+                                    <span class="color-goalie">Albert</span>
+                                    <span class="color-goalie">Anthony</span>
+                                    <span>ArDai</span>
+                                    <span>BillyF</span>
+                                    <span>Matt</span>
+                                    <span>Paul</span>
+                                    <span>SRay</span>
+                                    <span>Sam</span>
+                                    <span>Shun</span>
+                                    <span>On<span class="badge">2</span></span>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+
+                
+            </div>
+
+
+        </div>
+    </section>
+
+    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type='text/javascript' src="/js/sfc.js"></script>
+
+    <script>
+        //let results = null;
+	    //$(document).ready(function(){
+            //let surl = 'https://api.mlab.com/api/1/databases/sfcdb/collections/MatchesOutdoor2019?apiKey=m1QZo1IgF6SGC5zAgYCcseYPWf5xIsRS';
+		   // let oData = null;
+		   // sfc.myAjax(surl, oData, 'GET').then((data) => {
+		   //     results = data;
+		   //     console.log(results);
+		   // });
+
+	    //});
+
+	    $('.expblock').on('click', function (e) {
+	        e.preventDefault();
+	        e.stopPropagation();
+            
+	        let index = $(this).data("index");
+
+	        if ($('#card-' + index + ' .card-footer').is(":visible")) {
+	            $('#card-' + index + ' .card-footer').hide('slow');
+	            $('#card-' + index + ' .expblock').css({
+	                "box-shadow": "0px 2px 2px 0px rgba(0,0,0,0.16), 0px 0px 0px 1px rgba(0,0,0,0.08), inset 0px 0px 0px 0px rgba(0,0,0,0.1), inset 0px 0px 0px 0px rgba(255,255,255,0.5)",
+	                transform: "rotate(0deg)"
+	            });
+	        }
+	        else {
+	            $('#card-' + index + ' .card-footer').show('slow');
+	            $('#card-' + index + ' .expblock').css({
+	                "box-shadow": "none",
+	                transform: "rotate(180deg)"
+	            });
+	        }
+	        
+
+	    });
+    </script>
+</body>
+</html>
+
